@@ -22,9 +22,8 @@ body {
 	list-style-type: none;
 }
 
-.btn-reset {
-    
-	padding: 0;
+.btn-reset {    
+	padding: 20px 75px;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
@@ -35,25 +34,21 @@ body {
     font-weight: 500;
     height: 61px;
     font-size: 18px;
-}
-.blue-btn{
-    background: #080029;
-    color: white;
-    padding: 20px 75px;
-    
-}
-.white-btn{
-    border: 2px solid #080029;
-    color: #080029;
-    padding: 20px 75px;
     white-space: nowrap;
 }
+
 
 .container {
 	max-width: 1800px;
     width: 100%;
 	margin: 0 auto;
     /* padding-left: 184px; */
+}
+.navigation-link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 154%;
+    /* position: relative; */
 }
 
 .three-container{
@@ -81,75 +76,87 @@ body {
     color: #747474;
 }
 
+
+
 /*          HEADER           */
 .header {
     /* min-width: 1920px;     */
     width: 100%;
     margin-top: 25px;
-
     /* position: absolute;
     left: 0;
     top: 0; */
+    
+}
+
+.header__container{
+    width: 100%;
+	margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;    
+    border: 2px solid #F0F0F0;
+    background: rgba(252, 252, 252, 0.02);    
     position: relative;
 }
 
-.header-container{    
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    column-gap: 20px;
-    border: 2px solid #F0F0F0;
-    background: rgba(252, 252, 252, 0.02);
-    /* padding: 19px 92px 19px 18.85px; */
-    
-}
 .logo{
     padding: 23px 19.28px 0px 16.35px;
-    border-right: 2px solid #F0F0F0;;
+    border-right: 2px solid #F0F0F0;
+    /* margin-right: 75px;     */
 }
 
-.header-navigation{
-    margin-left: -563px;
-    
+.header__navigation{
+    left: 183px;
+    /* margin-left: -563px; */
+    position: absolute;
     max-width: 800px;
     width: 100%;
     padding-top: 33px;
     
+    
 }
-.header-navigation-wrapper{
+.header__navigation-wrapper{
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
 }
 
-.header-profile{
-    padding: 17px 90px 11px 0px;
+
+.header__profile-button{
+    padding: 17px 90px 11px 0px;    
 }
 /*          /HEADER           */
 
 /*          ASIDE           */
+.aside{
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 528px;
+    background: red;
+}
 .aside-inner {
     width: 90px;
-    height: 670px;
+    height: 760px;
     border: 2px solid #F0F0F0;
-    background: red;
+    
     position: fixed
 }
 /*          /ASIDE           */
 
 /*          HERO           */
-.hero-content{
+.hero__content{
     display: flex;
     justify-content: space-between;
     padding-top: 55px;
 }
-.hero_text{
+.hero__text{
     margin-top: 34px;
 }
-.hero_subtitle{
+.hero__subtitle{
     padding-top: 45px;
 }
 
-.hero_title{
+.hero__title{
     width: 697px;
     margin: 26px 0 60px 0;
     font-family: 'Merriweather', sans-serif;
@@ -158,21 +165,24 @@ body {
     line-height: 106px;
     color: #080029;
 }
-.hero-btns{
+.hero__buttons{
     margin-top: 10px;
     max-width: 573px;
     display: flex;
     justify-content: space-between;
 }
-.choose-zoo-btn{
+.hero__choose-button{
     width: 250px;
-
+    background: #080029;
+    color: white;
 }
-.watch-online-btn{
+.hero__watch-button{
     width: 261px;
+    border: 2px solid #080029;
+    color: #080029;
 }
 /*          ANIMATION I          */
-.dot_i {
+.hero__dot-i {
     margin : -12px 0 0 0;
     line-height: 0.55;
 }
@@ -181,7 +191,7 @@ span {
     display: inline-block;
 }
 
-.stack {
+.hero__stack {
     display: block;
 }
 
@@ -195,7 +205,7 @@ span {
     }
 }
 
-.bouncing {
+.hero_bouncing {
     color: red;
     animation                : bounce 0.4s;
     animation-iteration-count: infinite;
@@ -207,32 +217,32 @@ span {
 
 
 /*          SECOND           */
-.second-screen-content{
+.second-screen__content{
     margin-top: 135px;
     display: flex;
     justify-content: space-between;
     
 }
-.second-screen-text{
+.second-screen__text{
     width: 696px;
     height: 477px;
     margin-top: 140px;
     
 }
-.second-screen_title{
+.second-screen__title{
     padding-top: 20px;
 }
 
-.second-screen_discr{
+.second-screen__discr{
     padding-top: 11px;
 }
-.second-screen_btn{
+.second-screen__button{
     margin-top: 62px;
+    width: 218px;
+    background: #0F0049;
+    color: #FCFCFC;
 }
 
-.second-screen_btn{
-    width: 218px;
-}
 /*          /SECOND          */
 
 
@@ -243,20 +253,35 @@ span {
     height: 896px;    
 }
 
-.third-screen-content{
+.third-screen__content{
     display: flex;
     justify-content: space-between;
 }
-.third-screen-text{
+.third-screen__text{
     margin-top: 317px;
     /* width: 326px; */
 }
-.third-screen_title{
+.third-screen__title{
     width: 325px;
     padding-top: 50px;
 }
 
-.third-screen-image{
+.slider-buttons {
+    margin-top: 55px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-buttons__item{
+    width: 65px;
+    height: 65px;
+    background: #181818;
+    border-radius: 50%;
+    padding: 26px 17px 32px 18px;
+    color: white;
+}
+
+.third-screen__images{
     margin-left: 44px;
     margin-top: 100px;
     width: 1800px;
@@ -267,20 +292,6 @@ span {
     gap: 40px;
 	grid-template-columns: repeat(3, 1fr);
 }
-.third-screen-slider-btns{
-    margin-top: 55px;
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-}
-.slider_btn{
-    width: 65px;
-    height: 65px;
-    background: #181818;
-    border-radius: 50%;
-    padding: 26px 17px 32px 18px;
-    color: white;
-}
 /*          /THIRD          */
 
 
@@ -289,34 +300,34 @@ span {
     position: relative;
     padding-bottom: 100px;
 }
-.fourth-screen_subtitle{
+.fourth-screen__subtitle{
     margin-left: 368px;
     margin-top: 100px;
 }
-.fourth-screen_block{
+.fourth-screen-item{
     width: 824px;
     height: 312px;      
     display: flex;
     justify-content: space-between;
 }
-.fourth-screen-text{
+.fourth-screen-item__text{
     padding-top: 55px;
     width: 456px;
 }
 
-.pay-visa-block{
+.fourth-screen__item-1{
     margin-top: 30px;
     margin-left: 368px;
 }
-.pay-visa-block_discr{
+.fourth-screen-item__discr{
     padding-top:31px ;
 }
-.first-arrow{
+.fourth-screen__first-arrow{
     left: 902px;
     top: 313px;
     position: absolute;
 }
-.payments-goes-block{
+.fourth-screen__item-2{
     margin-left: 920px;
     margin-top: 60px;
 }
@@ -326,12 +337,12 @@ span {
 .payments-goes-block_discr{
     padding-top: 31px;
 }
-.second-arrow{
+.fourth-screen__second-arrow{
     left: 712px;
     top: 573px;
     position: absolute;
 }
-.selected-animal-block{
+.fourth-screen__item-3{
     margin-left: 184px;
     margin-top: 45px;
 }
@@ -343,27 +354,37 @@ span {
 }
 /*          /FOURTH          */
 
+
+
 /*          FIFTH          */
 .fifth-screen{
     padding: 101px;
     background: #080029;
 }
-.fifth-screen-container{
+.fifth-screen__container{
     padding-left: 184px;
 }
-
-.fifth-screen-content{
+.fifth-screen__content{
     display: flex;
     justify-content: space-between;
 }
-.fifth-screen-text_title{
+.fifth-screen__text{
+    max-width: 512px;
+}
+.fifth-screen__subtitle{
+    color: #FCFCFC;
+}
+
+
+.fifth-screen__title{
     color: #FCFCFC;
     padding-top: 37px;
     padding-bottom: 10px;
 }
-.fifth-screen-text{
-    max-width: 512px;
+.fifth-screen__discr{
+    color: #FCFCFC;
 }
+
 .fifth-screen-slider_open-more{
     padding-top: 2px;
     height: 0;
@@ -374,12 +395,16 @@ span {
     color: #FCFCFC;
 }
 
-.fifth-screen-text_btn{
+.fifth-screen__button {
     width: 290px;
     margin-top: 60px;
     border: 2px solid #FCFCFC;
+    background: #080029;
+    color: #FCFCFC;
 }
-
+.slider-button_white{
+    background: #FCFCFC;    
+}
 .fifth-screen-slider{
     margin-top: 28px;
     width: 1064px;    
@@ -616,6 +641,18 @@ span {
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
+    color: #BCBCBC;
+}
+.footer-copyright-block{
+    margin-top: 150px;
+    padding: 50px 0 59px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #747474;
+}
+.copyright{
+    font-size: 16px;
+    line-height: 145%;
     color: #BCBCBC;
 }
 /*          /FOOTER          */
