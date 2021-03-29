@@ -385,8 +385,9 @@ span {
     color: #FCFCFC;
 }
 
-.fifth-screen-slider_open-more{
-    padding-top: 2px;
+.fifth-screen__slider-button{
+    padding: 0 0 0 0;
+    /* padding-top: 2px; */
     height: 0;
     font-weight: 500;
     font-size: 18px;
@@ -405,25 +406,23 @@ span {
 .slider-button_white{
     background: #FCFCFC;    
 }
-.fifth-screen-slider{
+.fifth-screen__slider{
     margin-top: 28px;
     width: 1064px;    
     display: flex;
     justify-content: space-between;
 }
-.fifth-screen-slide{    
+.review-card{    
     padding: 40px 40px 73px 40px;
     background: #FCFCFC;
     border-radius: 15px;
-    width: 512px;
+    max-width: 512px;
     height: 273px;
 }
-.slide-name-block{
-    display: flex;
-    width: 246px;
-    justify-content: space-between;
+.review-card__name-block{
+    display: flex;    
 }
-.slide_name{
+.review-card__name{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
@@ -434,57 +433,57 @@ span {
     justify-content: center;
     color: #0B0B0B;
 }
-.slide_avatar{
+.review-card__avatar{
+    margin-right: 19px;
     width: 46px;
     height: 46px;
     border: 1px solid #E3E3E3;
-    border-radius: 46px;    
+    border-radius: 46px;
+    position: relative;
+       
 }
-.sdfsdf{
+.review-card__img{    
     border-radius: 50%;
-}
-.fifth-screen_2-slide-name-block {
-    width: 190px;
-}
-.fifth-screen_2-slide_avatar{
-    padding: 9.18px 9px 7.73px 9px;
-}
-.fifth_slider-btn{
-    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
     
 }
-.slide_discription{
+.fifth-screen__sliders-btns{
+    margin-top: 28px;
+}
+
+.fifth_slider-btn{
+    background: white;    
+}
+.review-card__discription{
     color: #181818;
     padding-top: 32px;
 }
-.fifth-screen-slider-btns{
-    padding-top: 30px;
-    max-width: 150px;
-    display: flex;
-    justify-content: space-between;
-}
+
 /*          /FIFTH          */
 
 
 /*          SIXTH          */
 .sixth-screen{
     position: relative;
-    padding: 47px 0 112px 0;
+    padding: 52px 0 112px 0;
 }
-.sixth-screen-container{
+.sixth-screen__container{
     padding-left: 184px;
     padding-right: 31px;
 }
-.sixth-screen-subtitle{
+.sixth-screen__subtitle{
     position: absolute;
     padding-top: 50px;
 }
-.sixth-screen-content{
+.sixth-screen__content{
     display: flex;
     justify-content: space-between;
 }
 .sixth-screen-card{
-    margin-top: 135px;
+    margin-top: 138px;
     display: flex;
     flex-direction: column;
     width: 344px;
@@ -494,59 +493,114 @@ span {
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
 }
-.card_image{
+.sixth-screen-card__image{
     width: 344px;
     height: 218px;  
 }
-.card_title{
-    text-align: center;    
+.sixth-screen-card__title{     
     margin: 21px 0;
+    text-align: center;
 }
-.card_dicr{
+.sixth-screen-card__dicr{
     max-width: 264px;
     text-align: center;
     margin: 0 auto;
     
 }
-.card_btn{
-    padding-left: 10px;
-    padding-top: 56px;
+.sixth-screen-card__btn{
+    padding-right: 68px;
+    padding-top: 55px;
     color: #3888FF;
 }
-.card_btn-arrow{
+.sixth-screen-card__btn-arrow{
     padding-left: 5px;
 }
 
 
-
-.sixth-screen-map{
+/*MAP*/
+.sixth-screen__map{
     margin-left: 23px;
     width: 1223px;
     height: 700px;
     position: relative;
     background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/world.png);
 }
-.sixth-screen-map_item {
-    
-    width: 96px;
-    height: 124px;
-    
-    background: #ffc000;
 
-    width: 96px;
-  height: 124px;
-  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-  border: 3px solid black;
-  /* transform: rotate(-45deg); */
-    
+.map-animal-icon{
+    /* margin-left: 100px; */
     position: relative;
-    transition: 0.5s;
+     
 }
-.img_item{
+.map-animal-icon__back{
+    width: 100px;
+    height: 120px;
+    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/Ellipse_no.svg) no-repeat;
+}
+.map-animal-icon__img{
     position: absolute;
-    top: 10px;
-    left: 25px;
+    top: 23px;
+    right: 22px;
 }
+
+.map-animal-icon:hover .map-animal-icon__back{
+    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/Ellipse_blue.svg) no-repeat;
+    width: 140px;
+    height: 150px;
+    
+}
+.map-animal-icon:hover .map-animal-icon__img img{
+    width: 52px;   
+}
+.map-animal-icon:hover .map-animal-icon__img{
+    top: 25px;
+    right: 44px;
+}
+
+.sixth-screen__item-1{ 
+    position: absolute;   
+    top: 190px;
+    left: 123px;
+}
+.sixth-screen__item-1:hover{
+    top: 155px;
+    left: 109px;
+}
+.sixth-screen__item-2{
+    position: absolute;
+    top: 205px;
+    left: 253px;
+}
+.sixth-screen__item-2:hover{    
+    top: 170px;
+    left: 239px;    
+}
+.sixth-screen__item-3{
+    position: absolute;
+    top: 333px;
+    left: 571px;
+}
+.sixth-screen__item-3:hover{    
+    top: 298px;
+    left: 557px;    
+}
+.sixth-screen__item-4{
+    position: absolute;
+    top: 197px;
+    left: 889px;
+}
+.sixth-screen__item-4:hover{    
+    top: 162px;
+    left: 875px;
+}
+
+
+
+/* .map-animal-icon__img img{
+    max-width: 40px;
+} */
+
+/*MAP*/
+
 /*          /SIXTH          */
 
 
