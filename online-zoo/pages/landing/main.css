@@ -610,24 +610,31 @@ span {
     padding-top: 100px;
 }
 
-.footer-content{
+.footer__content{
     display: grid;
     grid-template-columns: repeat(3, 553px 551px);
     /* justify-content: space-between; */
 }
-.footer_logos{
+.footer__logos{
     display: flex;
-    height: 371px;
+    height: 374px;
     justify-content: space-between;
     flex-direction: column;
 
 }
-.footer-rs-logos{
+.footer__rs-logos{
+    
     display: flex;
     justify-content: space-between;
     width: 303px;
+    position: relative;
 }
-.x{
+.footer__logo-RS{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.footer_x{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -635,69 +642,66 @@ span {
     line-height: 19px;
     color: #FCFCFC;
 }
-.footer-navigation{
+.footer__navigation{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 384px;
 }
-.footer-navigation-subtitle{
+.footer__navigation-subtitle{
     color: #FCFCFC;
     padding-bottom: 40px;
 
 }
-.footer-navigation-wrapper{
+.footer__navigation-wrapper{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 318px;
 }
-.footer-navigation-item a{
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 154%;   
+.navigation-link{
     color: #BCBCBC;
 }
-.footer-third-column{
+.footer__third-column{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 368px;
 }
-.footer-third-column-donation{
+.footer__third-column-donation{
    max-width: 339px;
    height: 257px; 
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
-.donation_subtitle{
+.footer__donation-subtitle{
     color: #FCFCFC;
 }
-.donation_discr{
+.footer__donation-discr{
     color: #BCBCBC;
     padding-top: 9px;
     /* padding: 46px 0 40px; */
 }
-.donation-btn{
+.footer__donation-btn{
     border: 2px solid #FCFCFC;
+    color: #FCFCFC;
     background: #0B0B0B;
-    white-space: nowrap;
 }
 
-.footer-third-column-social{
+.footer__third-column-social{
     display: flex;
     justify-content: space-between;
     max-width: 352px;
 }
-.footer-third-column-social_item a{
+.footer__third-column-social-item a{
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
     color: #BCBCBC;
 }
-.footer-copyright-block{
+.footer__copyright{
     margin-top: 150px;
     padding: 50px 0 59px 0;
     display: flex;
