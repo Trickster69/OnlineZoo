@@ -48,7 +48,11 @@ h1{
     white-space: nowrap;
 }
 
-
+.site-wrapper{
+    max-width: 1920px; 
+    margin: 0 auto; 
+    overflow-x: hidden;
+}
 .container {
     /* overflow: hidden; */
 	width: 1800px;
@@ -116,6 +120,7 @@ h1{
 }
 
 .logo{
+    visibility: hidden;
     padding: 23px 16.28px 0px 16.35px;
     border-right: 2px solid #F0F0F0;
     /* margin-right: 75px;     */
@@ -245,7 +250,9 @@ h1{
 /*          /ASIDE           */
 
 /*          HERO           */
-.hero{    
+
+.hero{
+      
     background-color: #FCFCFC;
     padding-top: 55px;
     padding-bottom: 27px;    
