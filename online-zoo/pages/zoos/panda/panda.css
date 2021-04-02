@@ -132,9 +132,7 @@ main {
     display: flex;
     justify-content: space-between;    
     border: 2px solid #F0F0F0;
-    background: rgba(252, 252, 252, 0.02);    
-    position: relative;
-    /* margin: 0 auto; */
+    background: rgba(252, 252, 252, 0.02);
 }
 
 .logo {
@@ -146,21 +144,17 @@ main {
 
 
 .header__navigation {
-    left: 183px;
-    /* margin-left: -563px; */
-    position: absolute;
-    max-width: 800px;
-    width: 100%;
-    padding-top: 32px;
-    
-    
+    width: 800px;
+    padding-top: 30px;
+    margin-left: 93px;
 }
 .header__navigation-wrapper {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    /* position: relative; */
+    margin-right: auto    
 }
+
 .header__navigation-item {
     color: #080029;
 }
@@ -258,20 +252,29 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.aside__animal-item{
+
+.aside__animal-item {
     position: relative;
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    border: 2px solid #609FFF;
     display: flex;
     flex-direction: column;
     justify-content: center;    
     transition: 0.2s all;
 }
-.aside__animal-item:hover{
-    cursor: pointer;
+.acide_active {
     transform: scale(1.1);
+    border: 2px solid #609FFF;
+}
+.acide_disable {
+    border: 2px solid #D9E8FF;
+    cursor: pointer;
+}
+
+.acide_disable:hover {
+    transform: scale(1.1);
+    border: 2px solid #609FFF;
 }
 .aside__animal-item img{
     position: absolute;
@@ -302,6 +305,8 @@ main {
     
 }
 .hero__video {
+    border-radius: 5px;
+    overflow: hidden;
     width: 1064px;
     height: 599px;
 }
@@ -423,6 +428,8 @@ main {
     justify-content: space-between;
 }
 .second-screen__frame-item {
+    border-radius: 5px;
+    overflow: hidden;
     width: 328px;
     height: 184px;
     background-color: rgb(60, 124, 57);
