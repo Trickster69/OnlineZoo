@@ -372,7 +372,7 @@ main {
 .hero__donate-button {
     background: #0F0049;
     color: #FCFCFC;
-    width: 277px;
+    width: 302px;
 
 }
 .hero__donate-button:hover {
@@ -394,7 +394,7 @@ main {
 }
 .second-screen__content {
     display: flex;
-    width: 1432px;
+    width: 1064px;
     height: 275px;
     
     flex-direction: column;
