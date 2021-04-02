@@ -19,6 +19,9 @@ h1{
     position: absolute;
     visibility: hidden;
 }
+h2,h3,h4{
+    margin: 0;
+}
 
    /* html {
     overflow-x: hidden;
@@ -735,110 +738,46 @@ span {
     background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/world.png);
 }
 
-.map-animal-icon{
-    /* margin-left: 100px; */
+/* .map-animal-icon{
     position: relative;
-     
-}
-.map-animal-icon__back {
-    width: 69px;
-    height: 89px;
-    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/Ellipse\ 9.svg) no-repeat;
+} */
+/* .map-animal-icon__back {
     -webkit-filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09));
-    /* filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09)); */
-}
-.map-animal-icon__img{
-    position: absolute;
-    top: 11px;
-    right: 14px;
-}
-.map-animal-icon_panda{
-    top: 17px;
-    right: 12px;
-}
+} */
 
-.map-animal-icon:hover .map-animal-icon__back{
-    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/Ellipse_blue.svg) no-repeat;
-    
-    width: 140px;
-    height: 150px;
-    
+.map-animal-icon:hover .map-animal-icon__border{
+    stroke:#609FFF;
+    stroke-width: 2px;    
 }
-.map-animal-icon:hover .map-animal-icon__img img{
-    width: 53px;   
+.map-animal-icon__icon {
+    transition: 0.2s all;
+    -webkit-filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09));
+
 }
-.map-animal-icon:hover .map-animal-icon__img{
-    top: 25px;
-    right: 44px;
-}
-.map-animal-icon:hover .map-animal-icon_panda{
-    top: 35px;
-    right: 44px;
+.map-animal-icon__icon:hover{
+    transform: scale(1.33);
 }
 
 .sixth-screen__item-1{ 
     position: absolute;   
-    top: 189px;
-    left: 142px;
+    top: 175px;
+    left: 122px;
 }
-.sixth-screen__item-1:hover{
-    top: 155px;
-    left: 109px;
-}
-
-
-.marker_active {
-    top: 155px;
-    left: 109px;
-}
- .marker_active .map-animal-icon__img img{
-    width: 53px; 
-}
- .marker_active .map-animal-icon__img{
-    top: 25px;
-    right: 44px;
-}
-.marker_active .map-animal-icon__back {
-    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/Ellipse_blue.svg) no-repeat;
-    
-    width: 140px;
-    height: 150px;
-}
-
-
 .sixth-screen__item-2{
     position: absolute;
-    top: 216px;
-    left: 273px;
-}
-.sixth-screen__item-2:hover{    
-    top: 170px;
-    left: 239px;    
+    top: 206px;
+    left: 253px;
 }
 .sixth-screen__item-3{
     position: absolute;
-    top: 343px;
-    left: 591px;
-}
-.sixth-screen__item-3:hover{    
-    top: 298px;
-    left: 557px;    
+    top: 333px;
+    left: 571px;
 }
 .sixth-screen__item-4{
     position: absolute;
-    top: 204px;
-    left: 909px;
+    top: 194px;
+    left: 889px;
 }
-.sixth-screen__item-4:hover{    
-    top: 162px;
-    left: 875px;
-}
-
-
-
-/* .map-animal-icon__img img{
-    max-width: 40px;
-} */
 
 /*MAP*/
 
