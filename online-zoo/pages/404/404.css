@@ -15,7 +15,7 @@ body {
     font-style: normal;
     font-weight: normal;
 }
-h1{
+h1 {
     position: absolute;
     visibility: hidden;
 }
@@ -48,7 +48,7 @@ h1{
     white-space: nowrap;
 }
 
-.site-wrapper{
+.site-wrapper {
     max-width: 1920px; 
     margin: 0 auto; 
     overflow-x: hidden;
@@ -69,11 +69,11 @@ h1{
     /* position: relative; */
 }
 
-/* .three-container{
+/* .three-container {
     padding: 0px 184px 0 0px;
 } */
 
-.subtitle{
+.subtitle {
     font-family: 'Rubik';
     font-weight: normal;
     font-size: 22px;
@@ -83,7 +83,7 @@ h1{
     margin: 0;
 }
 
-.title{
+.title {
     margin: 0;
     font-family: 'Merriweather';
     font-style: normal;
@@ -92,12 +92,12 @@ h1{
     line-height: 145%;
     color: #080029;
 }
-.discription{
+.discription {
     font-size: 18px;
     line-height: 154%;
     color: #747474;
 }
-.navigation-link{
+.navigation-link {
     color: #BCBCBC;
 }
 
@@ -109,7 +109,7 @@ h1{
     padding-top: 25px;
 }
 
-.header__container{
+.header__container {
     width: 1800px;
     height: 90px;
     margin-left: 60px;
@@ -120,14 +120,14 @@ h1{
     position: relative;
 }
 
-.logo{
+.logo {
     padding: 25px 14.28px 0px 18.35px;
     /* border-right: 2px solid #F0F0F0; */
     /* margin-right: 75px;     */
 }
 
 
-.header__navigation{
+.header__navigation {
     left: 183px;
     /* margin-left: -563px; */
     position: absolute;
@@ -137,27 +137,27 @@ h1{
     
     
 }
-.header__navigation-wrapper{
+.header__navigation-wrapper {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     /* position: relative; */
 }
-.header__navigation-item{
+.header__navigation-item {
     color: #080029;
 }
-.header_active{
+.header_active {
     font-weight: 500;
     color: #080029;
     cursor: default;
 }
-.header_disable:hover{
+.header_disable:hover {
     text-shadow: 0 0 .50px #080029, 0 0 .50px #080029;
     transition: 0.2s all;
 }
 
 
-.header__profile-button{    
+.header__profile-button {    
     margin: 18px 0px 16px 0;    
     width: 52px;
     height: 52px;
@@ -168,37 +168,37 @@ h1{
     position: relative;
     cursor: pointer;
 }
-.header__profile-button img{    
+.header__profile-button img {    
     position: absolute;
     top: 10px;
     left: 13px;
     width: 26px;
     height: 33px;    
 }
-.header__profile-button:hover{
+.header__profile-button:hover {
     background: #080029;
     /* transform: scale(1.05); */
 }
-.header__profile-button:active{
+.header__profile-button:active {
     background: #150068;
     transform: scale(0.95);
 }
 /*          /HEADER           */
 
 /*          OOPS           */
-.oops{
+.oops {
     background-color: #FCFCFC;
     padding-top: 63px;
     padding-bottom: 80px;
 }
 
-.oops__content{
+.oops__content {
     /* padding: 0 267px; */
     margin-left: 267px;
     width: 900px;
     position: relative;
 }
-.oops__text-block{
+.oops__text-block {
     display: flex;
     flex-direction: column;    
     /* margin-left: 3px; */
@@ -207,7 +207,7 @@ h1{
     text-align: center;
     margin-bottom: 79px;
 }
-.oops__title{
+.oops__title {
     margin-top: 92px;
     position: absolute;
     z-index: 2;
@@ -216,7 +216,7 @@ h1{
     top: -18px;
     left: 212px;
 }
-.oops__text{
+.oops__text {
     margin-top: 155px;
     padding-right: 4px;
     font-family: 'Rubik';
@@ -236,7 +236,7 @@ h1{
     background: #0F0049;
     color: #FCFCFC;
 }
-.oops__404{
+.oops__404 {
     position: absolute;
     opacity: 0.8;
     z-index: 1;
@@ -252,12 +252,12 @@ h1{
     color: #D9E8FF;
 
 }
-.oops__video{
+.oops__video {
     padding: 0 0 0 0;
     width: 900px;
     height: 507px;
 }
-.oops_support{
+.oops_support {
     margin-top: 60px;
     margin-left: 237px;
     text-align: center;
@@ -270,7 +270,7 @@ h1{
     letter-spacing: 0em; 
     
 }
-.oops_support a{
+.oops_support a {
     text-decoration-line: underline;
     color: #3888FF;
 }
@@ -278,38 +278,38 @@ h1{
 
 
 /*          FOOTER          */
-.footer{
+.footer {
     position: relative;
     z-index: 3;
     background: #0B0B0B;
     padding: 100px 0 59px 0;
 }
 
-.footer__content{
+.footer__content {
     display: grid;
     grid-template-columns: repeat(3, 553px 551px);
     /* justify-content: space-between; */
 }
-.footer__logos{
+.footer__logos {
     display: flex;
     height: 374px;
     justify-content: space-between;
     flex-direction: column;
 
 }
-.footer__rs-logos{
+.footer__rs-logos {
     
     display: flex;
     justify-content: space-between;
     width: 303px;
     position: relative;
 }
-.footer__logo-RS{
+.footer__logo-RS {
     position: absolute;
     right: 0;
     top: 10px;
 }
-.footer_x{
+.footer_x {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -320,78 +320,78 @@ h1{
     left: 142px;
     top: 23px;
 }
-.footer__navigation{
+.footer__navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 384px;
 }
-.footer__navigation-subtitle{
+.footer__navigation-subtitle {
     color: #FCFCFC;
     padding-bottom: 40px;
 
 }
-.footer__navigation-wrapper{
+.footer__navigation-wrapper {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 318px;
 }
-.footer-navigation__link:hover{
+.footer-navigation__link:hover {
     color: #FCFCFC;
     text-shadow: 0 0 .50px #080029, 0 0 .50px #080029;
 }
 
-.footer__third-column{
+.footer__third-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 366px;
     
 }
-.footer__third-column-donation{
+.footer__third-column-donation {
    max-width: 339px;
    height: 257px; 
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
-.footer__donation-subtitle{
+.footer__donation-subtitle {
     color: #FCFCFC;
 }
-.footer__donation-discr{
+.footer__donation-discr {
     color: #BCBCBC;
     padding-top: 9px;
     /* padding: 46px 0 40px; */
 }
-.footer__donation-btn{
+.footer__donation-btn {
     border: 2px solid #FCFCFC;
     color: #FCFCFC;
     background: #0B0B0B;
 }
-.footer__donation-btn:hover{
+.footer__donation-btn:hover {
     background: #0F0049;
 }
-.footer__donation-btn:active{
+.footer__donation-btn:active {
     background: #150068;
 }
 
-.footer__third-column-social{
+.footer__third-column-social {
     display: flex;
     justify-content: space-between;
     max-width: 352px;
 }
-.footer__third-column-social-item a{
+.footer__third-column-social-item a {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
     color: #BCBCBC;
 }
-.footer__third-column-social-item a:hover{
+.footer__third-column-social-item a:hover {
     color: #FCFCFC;
 }
-.footer__copyright{
+.footer__copyright {
     max-width: 1432px;
     margin-top: 150px;
     padding: 50px 0 0px 0;
@@ -399,7 +399,7 @@ h1{
     justify-content: space-between;
     border-top: 1px solid #747474;
 }
-.copyright{
+.copyright {
     font-size: 16px;
     line-height: 145%;
     color: #BCBCBC;

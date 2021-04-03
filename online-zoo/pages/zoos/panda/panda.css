@@ -15,7 +15,7 @@ body {
     font-style: normal;
     font-weight: normal;
 }
-h1{
+h1 {
     position: absolute;
     visibility: hidden;
 }
@@ -66,7 +66,7 @@ main {
     /* padding-left: 154px; */
     /* padding-left: 184px; */
 }
-.main-content{
+.main-content {
     width: 100%;
     margin-left: -90px;
 }
@@ -78,7 +78,7 @@ main {
     /* position: relative; */
 }
 
-/* .three-container{
+/* .three-container {
     padding: 0px 184px 0 0px;
 } */
 
@@ -276,7 +276,7 @@ main {
     transform: scale(1.1);
     border: 2px solid #609FFF;
 }
-.aside__animal-item img{
+.aside__animal-item img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -415,7 +415,7 @@ main {
     width: 17px;
     height: 13px;
 }
-.second-screen__btn-arrow img{
+.second-screen__btn-arrow img {
     position: absolute;
     top: 28px;
     left: 14px;
@@ -468,14 +468,14 @@ main {
     
     
 }
-.second-screen__back-frame-border{
+.second-screen__back-frame-border {
     width: 146px;
     padding-top: 10px;
     border-bottom: 1px solid #FCFCFC;
     opacity: 0.85;
     margin-left: 89.5px;
 }
-.second-screen__back-frame-btn{
+.second-screen__back-frame-btn {
     padding: 1px 0 0 0;
     margin-top: 20.5px;
     margin-left: 118px;
@@ -486,7 +486,7 @@ main {
     text-align: center;
     color: #FCFCFC;
 }
-.second-screen__arrow{
+.second-screen__arrow {
     margin-left: 8px;
 }
 
@@ -523,7 +523,7 @@ main {
     background: #FCFCFC;
     padding-bottom: 105px;
 }
-.container{
+.container {
     /* background-color: #d616b6; */
 }
 .third-screen__content {

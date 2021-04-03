@@ -15,7 +15,7 @@ body {
     font-style: normal;
     font-weight: normal;
 }
-h1{
+h1 {
     position: absolute;
     visibility: hidden;
 }
@@ -66,7 +66,7 @@ main {
     /* padding-left: 154px; */
     /* padding-left: 184px; */
 }
-.main-content{
+.main-content {
     width: 100%;
     margin-left: -90px;
 }
@@ -78,7 +78,7 @@ main {
     /* position: relative; */
 }
 
-/* .three-container{
+/* .three-container {
     padding: 0px 184px 0 0px;
 } */
 
@@ -279,7 +279,7 @@ main {
     border: 2px solid #609FFF;
 }
 
-.aside__animal-item img{
+.aside__animal-item img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -302,32 +302,88 @@ main {
     height: 860px;
 }
 
-.hero__content {
-    
-    
-}
-.icon {
-    position: relative;
-    height: 106px;
-    width: 82px;
-    
-    
-}
-.icon_icon {
+.map-card {
     position: absolute;
-    top: 14px;
-    left: 18px;
+    top: 11.9%;
+    left: 30.39%;
+    margin-top: 138px;
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    height: 512px;
+
+    background: #FCFCFC;
+    box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    overflow: hidden;
 }
-.icon_back {
-   -webkit-filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09))
+.map-card__image {
+    width: 344px;
+    height: 218px;  
+    
 }
- .icon:hover .icon_back{
-    width: 84px;
+
+.map-card__title {     
+    margin: 21px 0;
+    text-align: center;
+}
+.map-card__dicr {
+    max-width: 264px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.map-card__btn {
+    padding-right: 68px;
+    margin-top: 7px;
+    color: #3888FF;
+}
+.map-card__btn-arrow {
+    padding-left: 5px;
+}
+
+.map-animal-icons__item:hover .map-animal-icon__border {
     stroke:#609FFF;
     stroke-width: 2px;    
-    transform: scale(1.2);
+}
+.map-animal-icons__item {
+    transition: 0.2s all;
     -webkit-filter: drop-shadow(1px 12px 22px rgba(0, 0, 0, 0.09));
+
 }
-.icon:hover .icon_icon{
-    transform: scale(1.2);
+.map-animal-icons__item:hover {
+    transform: scale(1.16);
+    cursor: pointer;
 }
+
+
+.marker_active .map-animal-icon__border {
+    stroke:#609FFF;
+    stroke-width: 2px; 
+}
+.marker_active .map-animal-icons__item {
+    transform: scale(1.16);
+}
+
+.sixth-screen__item-1 { 
+    position: absolute;   
+    top: 175px;
+    left: 122px;
+}
+.sixth-screen__item-2 {
+    position: absolute;
+    top: 22.7%;
+    left: 12%;
+}
+.sixth-screen__item-3 {
+    position: absolute;
+    top: 50.7%;
+    left: 48.3%;
+}
+.sixth-screen__item-4 {
+    position: absolute;
+    top: 27.5%;
+    left: 83.7%;
+}
+
+/*MAP*/

@@ -12,7 +12,6 @@
     <title>Zoos map</title>
 </head>
 <body>
-    
     <!--            HEADER           -->
     <header class="header">
         <!-- <div class="site-wrapper">  -->
@@ -23,11 +22,11 @@
                 <div class="header__navigation-wrapper">
                     <nav class="header__navigation">
                         <ul class="header__navigation-wrapper list-reset">
-                            <li><a class="header__navigation-item navigation-link header_disable" href="">About</a></li>
-                            <li><a class="header__navigation-item navigation-link header_active" href="">Map</a></li>
-                            <li><a class="header__navigation-item navigation-link header_disable" href="">Zoos</a></li>
-                            <li><a class="header__navigation-item navigation-link header_disable" href="">Contact us</a></li>
-                            <li><a class="header__navigation-item navigation-link header_disable" href="">Design</a></li>
+                            <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/landing/main.html">About</a></li>
+                            <li><a class="header__navigation-item navigation-link header_active" >Map</a></li>
+                            <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/zoos/panda/panda.html">Zoos</a></li>
+                            <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/404/404.html">Contact us</a></li>
+                            <li><a class="header__navigation-item navigation-link header_disable" href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo">Design</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -74,25 +73,134 @@
                 <!-- <div class="site-wrapper"> -->
                     <div class="hero__inner container">
                         <div class="hero__content">
-                            <div class="icon">
-                                <svg class="icon_back" width="82" height="106" viewBox="0 0 69 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g style="mix-blend-mode:screen" filter="url(#filter0_b)">
-                                    <path d="M69 34.6111C69 53.7263 34.5 89 34.5 89C34.5 89 0 53.7263 0 34.6111C0 15.4959 15.4462 0 34.5 0C53.5538 0 69 15.4959 69 34.6111Z" fill="#FCFCFC"/>
-                                    </g>
-                                    <defs>
-                                    <filter id="filter0_b" x="-5" y="-5" width="79" height="99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                    <feGaussianBlur in="BackgroundImage" stdDeviation="2.5"/>
-                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
-                                    </filter>
-                                    </defs>
-                                </svg>
 
-                                <div class="icon_icon">
-                                    <img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/test/Crocodile.png" alt="">
-                                </div>
+                            <div class="map-card">
+                                <div class="map-card__image"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/map/card_gorilla.png" alt=""></div>
+                                <h3 class="map-card__title title">Gorilla</h3>
+                                <div class="map-card__dicr discription">The broadcast comes from the Democratic Republic of the Congo in a forest area. Watch their life and life together</div>
+                                <div class="map-card__btn btn-reset">Watch now <span class="map-card__btn-arrow"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/right_blue.svg" alt=""></span></div>
                             </div>
+
+                            <div class="map-animal-icons">
+                                
+                                <!-- <div class="map-animal-icons__marker sixth-screen__item-1 ">                                        
+                                    <svg class = "map-animal-icons__item" width="113" height="133" viewBox="0 0 113 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                        <path class = "map-animal-icon__border" d="M90 44.6111C90 63.7263 55.5 99 55.5 99C55.5 99 21 63.7263 21 44.6111C21 25.4959 36.4462 10 55.5 10C74.5538 10 90 25.4959 90 44.6111Z" fill="#FCFCFC"/>
+                                        </g>
+                                        <path d="M74.7021 62.5652L71.9304 37.2039C71.8868 28.1545 64.766 20.8066 56.0195 20.8066C47.273 20.8066 40.1522 28.155 40.1091 37.2039L37.337 62.5652C37.2906 62.9895 37.4282 63.4134 37.7132 63.722C37.9982 64.0311 38.4019 64.1958 38.8115 64.1641C38.8403 64.1622 41.675 63.9673 44.2279 63.9673C46.0274 63.9673 46.9218 64.0633 47.3555 64.1444C49.5271 64.5486 53.7659 67.3978 55.216 68.462C55.4569 68.6382 55.7382 68.727 56.0195 68.727C56.3013 68.727 56.584 68.6377 56.8249 68.4601C58.2295 67.4257 62.3414 64.647 64.4699 64.2207C64.9597 64.1228 65.9959 64.0062 68.1531 64.0062C70.6347 64.0062 73.2122 64.1631 73.2377 64.165C73.645 64.1847 74.0463 64.0263 74.329 63.7182C74.6117 63.41 74.7484 62.9876 74.7021 62.5652ZM68.1531 61.1262C66.2174 61.1262 64.8406 61.2135 63.9421 61.3935C61.4489 61.8927 57.6915 64.3686 56.0177 65.5383C54.304 64.345 50.4066 61.7866 47.8467 61.3095C47.0427 61.1598 45.8587 61.0873 44.227 61.0873C42.8201 61.0873 41.3608 61.142 40.2838 61.1953L42.8799 37.4492C42.8859 37.3954 42.8887 37.3412 42.8887 37.2874C42.8887 29.7879 48.7787 23.6871 56.0191 23.6871C63.259 23.6871 69.1494 29.7879 69.1494 37.2874C69.1494 37.3417 69.1527 37.3959 69.1582 37.4492L71.7552 61.2082C70.7709 61.167 69.4609 61.1262 68.1531 61.1262Z" fill="#0F0049"/>
+                                        <path d="M47.678 39.0648C49.0536 39.0648 50.1688 37.9097 50.1688 36.4848C50.1688 35.0599 49.0536 33.9048 47.678 33.9048C46.3023 33.9048 45.1871 35.0599 45.1871 36.4848C45.1871 37.9097 46.3023 39.0648 47.678 39.0648Z" fill="#0F0049"/>
+                                        <path d="M64.361 39.0648C65.7366 39.0648 66.8518 37.9097 66.8518 36.4848C66.8518 35.0599 65.7366 33.9048 64.361 33.9048C62.9853 33.9048 61.8701 35.0599 61.8701 36.4848C61.8701 37.9097 62.9853 39.0648 64.361 39.0648Z" fill="#0F0049"/>
+                                        <path d="M56.0195 56.8442L62.2236 40.2031H49.8143L56.0195 56.8442ZM56.0195 48.8503L53.8692 43.0831H58.1697L56.0195 48.8503Z" fill="#0F0049"/>
+                                        <defs>
+                                        <filter id="filter0_d" x="0" y="0" width="113" height="133" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                        <feOffset dx="1" dy="12"/>
+                                        <feGaussianBlur stdDeviation="11"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                                </div>              -->
+
+                                <div class="map-animal-icons__marker  sixth-screen__item-2">                                        
+                                    <svg class="map-animal-icons__item" width="126" height="150" viewBox="0 0 126 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                        <path class="map-animal-icon__border" d="M103 51.2222C103 73.9886 62 116 62 116C62 116 21 73.9886 21 51.2222C21 28.4558 39.3563 10 62 10C84.6437 10 103 28.4558 103 51.2222Z" fill="#FCFCFC"/>
+                                        </g>
+                                        <path d="M85.9093 42.4339C85.9093 37.9144 83.0483 33.0384 78.0591 29.056C73.323 25.2755 67.5066 23.0186 62.4997 23.0186C52.4945 23.0186 39.0901 32.6179 39.0901 42.4344C39.0901 45.5294 43.4181 51.4763 44.3377 52.7042C46.4517 55.7824 49.2969 61.1926 48.7234 63.0872C47.1048 68.4285 47.1 72.5053 48.7086 75.2034C50.0221 77.4073 51.9172 77.8312 52.1289 77.8721C52.218 77.8895 52.3076 77.8982 52.3982 77.8982H72.6007C72.6837 77.8982 72.7666 77.8909 72.8482 77.8765C73.0603 77.8389 74.9602 77.4453 76.2837 75.2646C77.9123 72.5819 77.9094 68.4849 76.276 63.0877C75.6973 61.1752 78.4872 55.8739 80.6617 52.7032C81.5823 51.4739 85.9093 45.5285 85.9093 42.4339ZM78.3299 51.0302C77.3216 52.4951 72.3523 60.0042 73.5409 63.9321C75.2358 69.5316 74.6698 72.3165 73.8965 73.6667C73.3573 74.608 72.6646 74.9211 72.4148 75.0074H52.5889C52.363 74.9235 51.695 74.6114 51.1587 73.7125C50.3534 72.3608 49.7513 69.5673 51.4581 63.9326C52.6481 60.0047 47.6779 52.4951 46.6695 51.0302C46.6586 51.0138 46.6467 50.9979 46.6352 50.982C44.6896 48.3884 41.9501 44.0217 41.9501 42.4339C41.9501 34.4552 54.0106 25.9085 62.4992 25.9085C71.9099 25.9085 83.0483 34.8661 83.0483 42.4339C83.0483 44.0192 80.3089 48.3865 78.3633 50.982C78.3523 50.9974 78.3404 51.0138 78.3299 51.0302Z" fill="#080029"/>
+                                        <path d="M60.6137 68.0505H57.7532V71.9597H60.6137V68.0505Z" fill="#080029"/>
+                                        <path d="M67.2463 68.0505H64.3857V71.9597H67.2463V68.0505Z" fill="#080029"/>
+                                        <path d="M65.816 53.3415H59.1833V56.2318H65.816V53.3415Z" fill="#080029"/>
+                                        <path d="M65.816 59.2057H59.1833V62.0961H65.816V59.2057Z" fill="#080029"/>
+                                        <path d="M47.8193 43.3842L53.4814 49.1053L55.5041 47.0615L49.842 41.3404L47.8193 43.3842Z" fill="#080029"/>
+                                        <path d="M69.4979 47.0608L71.5203 49.1048L77.1832 43.3845L75.1608 41.3405L69.4979 47.0608Z" fill="#080029"/>
+                                        <path d="M68.9955 37.2113H56.0039V40.1016H68.9955V37.2113Z" fill="#080029"/>
+                                        <path d="M68.9955 31.4306H56.0039V34.321H68.9955V31.4306Z" fill="#080029"/>
+                                        <defs>
+                                        <filter id="filter0_d" x="0" y="0" width="126" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                        <feOffset dx="1" dy="12"/>
+                                        <feGaussianBlur stdDeviation="11"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                                        
+                                    
+                                                                
+                                </div>
+
+                                <div class="map-animal-icons__marker sixth-screen__item-3 marker_active">                                        
+                                    <svg class="map-animal-icons__item" width="128" height="150" viewBox="0 0 128 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                        <path class="map-animal-icon__border" d="M105 51.2222C105 73.9886 63 116 63 116C63 116 21 73.9886 21 51.2222C21 28.4558 39.804 10 63 10C86.196 10 105 28.4558 105 51.2222Z" fill="#FCFCFC"/>
+                                        <path d="M104 51.2222C104 56.6517 101.479 63.3614 97.5618 70.4654C93.6608 77.5394 88.4469 84.8777 83.214 91.5303C77.9841 98.1791 72.7517 104.122 68.8254 108.404C66.8628 110.545 65.2278 112.269 64.0842 113.457C63.6483 113.91 63.2839 114.285 63 114.575C62.7161 114.285 62.3517 113.91 61.9158 113.457C60.7722 112.269 59.1372 110.545 57.1746 108.404C53.2483 104.122 48.0159 98.1791 42.786 91.5303C37.5531 84.8777 32.3392 77.5394 28.4382 70.4654C24.5205 63.3614 22 56.6517 22 51.2222C22 29.0256 40.3386 11 63 11C85.6614 11 104 29.0256 104 51.2222Z"/>
+                                        </g>
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M87.3181 57.6471C87.1172 54.1973 86.1862 47.356 85.0288 44.0116C82.5329 36.7944 75.089 24.58 63.0187 24.58C50.9502 24.58 43.5049 36.7944 41.0086 44.0116C39.8503 47.3591 38.9198 54.1991 38.7197 57.6476C38.4157 62.8878 40.4129 68.0009 44.3438 72.0455C48.7597 76.589 54.9595 79.1948 61.354 79.1948H64.6842C71.0778 79.1948 77.2777 76.589 81.6936 72.0455C85.6245 68.0005 87.6221 62.8878 87.3181 57.6471ZM79.715 70.2268C75.868 74.1845 70.2494 76.5471 64.6838 76.5471H61.3536C55.788 76.5471 50.1684 74.1845 46.3219 70.2264C42.9105 66.7166 41.176 62.3023 41.4374 57.7963C41.6338 54.4223 42.5471 47.8665 43.5888 44.8548C45.6981 38.7577 52.4733 27.2268 63.0191 27.2268C73.5668 27.2268 80.3406 38.7577 82.449 44.8552C83.4903 47.8638 84.4045 54.4206 84.6009 57.7963C84.8618 62.3023 83.1268 66.717 79.715 70.2268Z" fill="#0F0049"/>
+                                        <path d="M70.3029 40.8062C67.6201 40.8062 65.0776 41.6837 63.0187 43.3003C60.9597 41.6837 58.4172 40.8062 55.734 40.8062C49.3218 40.8062 44.1051 45.8792 44.1051 52.1148C44.1051 56.2603 46.3877 59.9837 50.0327 61.9669C49.6553 62.7986 49.4602 63.67 49.4602 64.5436C49.4602 69.516 55.4155 73.4105 63.0187 73.4105C70.6218 73.4105 76.5767 69.516 76.5767 64.5436C76.5767 63.67 76.3811 62.7982 76.0041 61.9669C79.6492 59.9837 81.9313 56.2599 81.9313 52.1148C81.9317 45.8792 76.7151 40.8062 70.3029 40.8062ZM73.5931 60.1575L71.9666 60.7871L72.9951 62.165C73.5654 62.9288 73.8549 63.7291 73.8549 64.5436C73.8549 67.9153 68.8923 70.7633 63.0191 70.7633C57.1455 70.7633 52.1828 67.9153 52.1828 64.5436C52.1828 63.7295 52.4723 62.9296 53.0431 62.165L54.0716 60.7871L52.4455 60.1575C49.0332 58.8366 46.8287 55.6793 46.8287 52.1148C46.8287 47.3391 50.824 43.4534 55.7353 43.4534C58.1245 43.4534 60.3686 44.3628 62.0541 46.0133L63.02 46.9597L63.9859 46.0133C65.6715 44.3628 67.915 43.4534 70.3042 43.4534C75.2151 43.4534 79.2109 47.3391 79.2109 52.1148C79.2095 55.6793 77.005 58.8366 73.5931 60.1575Z" fill="#0F0049"/>
+                                        <path d="M54.8515 53.4206C56.1983 53.4206 57.2902 52.3588 57.2902 51.0491C57.2902 49.7393 56.1983 48.6776 54.8515 48.6776C53.5047 48.6776 52.4128 49.7393 52.4128 51.0491C52.4128 52.3588 53.5047 53.4206 54.8515 53.4206Z" fill="#0F0049"/>
+                                        <path d="M71.1857 53.4206C72.5326 53.4206 73.6244 52.3588 73.6244 51.0491C73.6244 49.7393 72.5326 48.6776 71.1857 48.6776C69.8389 48.6776 68.7471 49.7393 68.7471 51.0491C68.7471 52.3588 69.8389 53.4206 71.1857 53.4206Z" fill="#0F0049"/>
+                                        <path d="M62.0027 58.1756H59.2805V61.7446H62.0027V58.1756Z" fill="#0F0049"/>
+                                        <path d="M66.7566 58.1756H64.0344V61.7446H66.7566V58.1756Z" fill="#0F0049"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d" x="0" y="0" width="128" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                        <feOffset dx="1" dy="12"/>
+                                        <feGaussianBlur stdDeviation="11"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                        </filter>
+                                        <clipPath id="clip0">
+                                        <rect width="49" height="54.7097" fill="white" transform="translate(38.5 24.5323)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                        
+                                                  
+                                </div>
+
+                                <div class="map-animal-icons__marker sixth-screen__item-4">                                        
+                                    <svg class="map-animal-icons__item" width="128" height="150" viewBox="0 0 128 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d)">
+                                        <path class="map-animal-icon__border" d="M105 51.2222C105 73.9886 63 116 63 116C63 116 21 73.9886 21 51.2222C21 28.4558 39.804 10 63 10C86.196 10 105 28.4558 105 51.2222Z" fill="#FCFCFC"/>
+                                        </g>
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M87.9871 33.0771C86.6392 31.7227 84.8541 30.977 82.9605 30.977C81.0306 30.977 79.2216 31.7476 77.8662 33.1466L76.3342 34.728C72.407 32.0983 68.0307 30.7147 63.6087 30.7147C59.1863 30.7147 54.81 32.0983 50.8832 34.728L49.3508 33.1466C47.9953 31.7476 46.1859 30.9774 44.2564 30.9774C42.3633 30.9774 40.5782 31.7232 39.2303 33.078C36.4222 35.9004 36.3921 40.5241 39.1629 43.3849L41.4235 45.7184C40.0104 48.7224 39.2675 51.8279 39.2675 54.755C39.2675 65.1274 48.5946 71.5709 63.6091 71.5709C78.6232 71.5709 87.9503 65.1274 87.9503 54.755C87.9503 51.8283 87.207 48.7233 85.7934 45.7184L88.0549 43.3849C90.8253 40.5241 90.7952 35.9004 87.9871 33.0771ZM86.1604 41.4821L83.2292 44.5077C82.8218 44.9284 82.7292 45.569 83 46.0913C84.4982 48.9806 85.2899 51.9764 85.2899 54.7546C85.2899 65.1559 74.0896 68.8618 63.6083 68.8618C53.1265 68.8618 41.9262 65.1559 41.9262 54.7546C41.9262 51.9759 42.7179 48.9797 44.2156 46.0913C44.4865 45.569 44.3934 44.928 43.9865 44.5077L41.0556 41.4821C39.3145 39.6844 39.3336 36.7789 41.0977 35.0057C41.9448 34.1547 43.0663 33.6856 44.256 33.6856C45.4687 33.6856 46.6057 34.17 47.4576 35.049L49.7728 37.4385C50.2333 37.9139 50.9652 37.9757 51.4971 37.5857C55.2036 34.8625 59.3915 33.4233 63.6087 33.4233C67.825 33.4233 72.0129 34.8625 75.7199 37.5857C76.2514 37.9762 76.9841 37.9139 77.4446 37.4385L79.7598 35.049C80.6113 34.17 81.7482 33.6856 82.961 33.6856C84.1511 33.6856 85.2726 34.1547 86.1192 35.0052C87.8834 36.7794 87.902 39.6844 86.1604 41.4821Z" fill="#080029"/>
+                                        <path d="M46.7291 48.4543C44.1755 51.055 43.6844 54.7709 45.632 56.7541C47.5793 58.7382 51.2278 58.2375 53.7814 55.6367C56.3346 53.0364 56.8257 49.3206 54.8784 47.3369C52.9308 45.3537 49.2823 45.8539 46.7291 48.4543ZM49.8674 54.5849C48.5514 54.5849 47.4849 53.4987 47.4849 52.1584C47.4849 50.818 48.5514 49.7318 49.8674 49.7318C51.1834 49.7318 52.2499 50.818 52.2499 52.1584C52.2499 53.4987 51.1834 54.5849 49.8674 54.5849Z" fill="#080029"/>
+                                        <path d="M72.3389 47.3369C70.3908 49.3206 70.8828 53.0364 73.436 55.6368C75.9891 58.2375 79.638 58.7377 81.5853 56.7541C83.5334 54.7709 83.0414 51.055 80.4882 48.4543C77.935 45.8539 74.2857 45.3537 72.3389 47.3369ZM77.3499 54.5849C76.0339 54.5849 74.9674 53.4987 74.9674 52.1584C74.9674 50.818 76.0339 49.7318 77.3499 49.7318C78.666 49.7318 79.7325 50.818 79.7325 52.1584C79.7325 53.4987 78.6655 54.5849 77.3499 54.5849Z" fill="#080029"/>
+                                        <path d="M66.5305 56.6789C67.1329 56.5498 67.5851 56.0067 67.5851 55.3543C67.5851 54.6063 66.9898 54 66.2553 54H61.8227C61.0882 54 60.4929 54.6063 60.4929 55.3543C60.4929 56.0062 60.945 56.5493 61.547 56.6789L59.3896 58.8761C58.8701 59.4047 58.8701 60.2624 59.3896 60.7911C59.6494 61.0556 59.9898 61.1879 60.3298 61.1879C60.6698 61.1879 61.0102 61.0556 61.2699 60.7911L64.0385 57.9714L66.8071 60.7911C67.0669 61.0556 67.4073 61.1879 67.7473 61.1879C68.0873 61.1879 68.4277 61.0556 68.6874 60.7911C69.2069 60.2624 69.2069 59.4047 68.6874 58.8761L66.5305 56.6789Z" fill="#080029"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d" x="0" y="0" width="128" height="150" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                        <feOffset dx="1" dy="12"/>
+                                        <feGaussianBlur stdDeviation="11"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.09 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                        </filter>
+                                        <clipPath id="clip0">
+                                        <rect width="53.5652" height="41.6854" fill="white" transform="translate(36.826 30.2472)"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                                     
+                                </div>
+                            </div>                        
+    
+                           
                             
                         </div>
                     </div>
