@@ -293,7 +293,8 @@ main {
 .hero {  
     padding-top: 117px;
     padding-bottom: 42px;    
-    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map.png) no-repeat;
+    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map.png) no-repeat center center fixed;
+    background-size: cover;
     /* background: red; */
     position: absolute;
     top: 0;
