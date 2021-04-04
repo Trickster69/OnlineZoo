@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+    
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+h1 {
+    position: absolute;
+    visibility: hidden;
+}
+.about-item{
+    
+}
+
+.about-item__image{
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 60px;
+}
+.about-item__name{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 11px;
+    color: #609FFF;
+    margin-bottom: 40px;
+}
+
+.about-item__dicr{
+    margin: 0 auto;
+    width: 634px;
+    font-size: 12.2px;
+    line-height: 150.7%;
+    color: #323232;
+    margin-bottom: 40px;
+}
