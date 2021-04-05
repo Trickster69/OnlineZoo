@@ -226,11 +226,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 172px;
-    margin-top: 254px;
+    height: 187px;
+    margin-top: 244px;
+
 }
 .aside__button {
-    margin-top: 100px;
+    margin-top: 95px;
         
 }
 
@@ -243,9 +244,32 @@ main {
     outline: none;
     transition: 0.2s all;
 }
+.aside__link-item {
+    margin-left: 24px;
+    
+    width: 40px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    /* background: red; */
+    position: relative;
+    border-radius: 50%;
+    /* transition: 0.2s all; */
+}
+.aside__link-item svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 .aside__link-item:hover {
-    transform: scale(1.1);
-    transition: 0.2s all;
+    transform: scale(1.2);
+    /* transform: scale(1.1); */
+    border: 2px solid #D9E8FF;
+}
+.aside__link-item:hover .aside__link-svg{
+    fill:#150068;
+    
 }
 .aside__button-arrow:hover {
     cursor: pointer;
@@ -442,36 +466,87 @@ span {
 .slider-buttons__item {
     width: 65px;
     height: 65px;
-    background: #181818;
+    background: #0F0049;
     border-radius: 50%;
     padding: 26px 17px 32px 18px;
     color: white;
     transition: 0.2s all;
 }
 .slider-buttons__item:hover {
-    background: #050505;
+    background: #080029;
     transform: scale(1.02);
 }
 .slider-buttons__item:active {
-    background: #0F0049;
+    background: #150068;
     transform: scale(0.98)
 }
 
 .third-screen__images {
-    margin-left: 44px;
-    /* margin-top: 100px; */
+    margin-left: 44px;    
     width: 1800px;
-    height: 700px;
-    /* background-color: red; */
+    height: 700px;    
     overflow: hidden;
     display: grid;
     gap: 37px;
 	grid-template-columns: repeat(3, 1fr);
 }
+
 .third-screen-image-item {
     position: relative;
+    transition: 0.2s all;
     
 }
+.third-screen-image-item:before {
+    content: url(/trickster69-JSFE2021Q1/online-zoo/assets/icons/+.svg);  
+    width: 76px;
+    height: 76px;  
+    border-radius: 50%;
+    border: 2px solid rgba(252, 252, 252, 0.6);
+    opacity: 0.6;
+    text-align: center;
+    padding-top: 25px;
+    position: absolute;
+    top: 163px;
+    left: 126px;
+    transition: 0.05s all;
+    
+}
+.third-screen-image-item:hover:before {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 91px 20px 0;
+    content: attr(data-area);
+    font-weight: normal;
+    opacity: 1;
+    font-size: 18px;
+    line-height: 154%;
+    color: #FCFCFC;
+    width: 238px;
+    height: 238px;
+    border: 2px solid rgba(252, 252, 252, 0.3);
+}
+
+.third-screen-image-item:after {
+    content: attr(id);
+    position: absolute;
+    top: 284px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FCFCFC;
+    opacity: 0.8;
+}
+.third-screen-image-item:hover:after {
+    content: "Follow " url('/trickster69-JSFE2021Q1/online-zoo/assets/icons/Arrow_card.svg'); 
+    opacity: 1; 
+    cursor: pointer;
+}
+
 .third-screen-image-item img {
     border-radius: 5px;
 }
@@ -586,14 +661,14 @@ span {
     width: 286px;
     margin-top: 62px;    
     border: 2px solid #FCFCFC;
-    background: #080029;
+    background: #0F0049;
     color: #FCFCFC;
 }
 .fifth-screen__button:hover {
-    background: #06001f;
+    background: #080029;
 }
 .fifth-screen__button:active {
-    background: #11024d;
+    background: #150068;
 }
 
 .fifth-screen__slider-button {
@@ -710,6 +785,10 @@ span {
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
     overflow: hidden;
+}
+.map-card:hover {
+    box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
 }
 .map-card__image {
     width: 344px;
@@ -891,10 +970,10 @@ span {
 .footer__donation-btn {
     border: 2px solid #FCFCFC;
     color: #FCFCFC;
-    background: #0B0B0B;
+    background: #0F0049;
 }
 .footer__donation-btn:hover {
-    background: #0F0049;
+    background: #080029;
 }
 .footer__donation-btn:active {
     background: #150068;
