@@ -335,7 +335,7 @@ main {
     
 }
 .map-card__btn {
-    padding-right: 68px;
+    padding-left: 112px;
     margin-top: 7px;
     color: #3888FF;
 }
@@ -366,10 +366,10 @@ main {
     transform: scale(1.16);
 }
 
-.sixth-screen__item-1 { 
-    position: absolute;   
-    top: 175px;
-    left: 122px;
+.sixth-screen__item-1 {     
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .sixth-screen__item-2 {
     position: absolute;
