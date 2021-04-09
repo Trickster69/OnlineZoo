@@ -216,7 +216,8 @@ h2,h3,h4 {
 .sidebar-tonnel {
     position: absolute;
     height: 100%;
-    width: 9rem; }
+    width: 9rem; 
+}
 .aside {
     /* margin-top: -90px; */
     top: 25px;

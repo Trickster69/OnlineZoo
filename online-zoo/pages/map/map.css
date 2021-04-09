@@ -6,7 +6,6 @@
 *::after {
 	box-sizing: border-box;
 }
-
 img {
     max-width: 100%;
 }
@@ -20,11 +19,11 @@ h1 {
     visibility: hidden;
 }
 
-   /* html {
-    overflow-x: hidden;
-    margin-right: calc(-1 * (100vw - 100%));
-    
-    } */
+.page-wrapper {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 .list-reset { /*применять для списков ul*/
 	margin: 0;
@@ -203,23 +202,21 @@ main {
 
 /*          ASIDE           */
 
-.aside {
-    /* margin-top: -90px; */
+.aside {    
     margin-top: 25px;
+    margin-left: 60px;
     top: 25px;
     left: 59px;
     width: 90px;
     height: 760px;
-    border: 2px solid #F0F0F0;
-    /* margin: 0 auto; */
+    border: 2px solid #F0F0F0;    
     display: flex;
     flex-direction: column;
     text-align: center;
     position: sticky;
     z-index: 2;
-    /* backdrop-filter: blur(5px); */
-    
 }
+
 .aside__logo {
     width: 90px;
     height: 86px;
