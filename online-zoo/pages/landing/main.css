@@ -465,6 +465,7 @@ span {
 .third-screen {
     background: #D9E8FF;
     padding: 100px 0;
+
 }
 
 .third-screen__content {
@@ -472,6 +473,7 @@ span {
     max-width: 1433px;    
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .third-screen__text {
     margin-top: 217px;
@@ -507,8 +509,9 @@ span {
 }
 
 .third-screen__images {
+    position: relative;
     margin-left: 44px;    
-    width: 1800px;
+    min-width: 1772px;
     height: 700px;    
     overflow: hidden;
     /* display: grid;
@@ -1244,11 +1247,11 @@ span {
 
     /*          THIRD          */   
     .third-screen {        
-        padding: 94px 0 105px 0;
+        padding: 94px 0 86px 0;
     }
     .third-screen__content {
-        max-height: 535px;
-        max-width: 871px;
+        max-height: 554px;
+        max-width: 860px;
         justify-content: space-between;
     }
 
@@ -1259,13 +1262,13 @@ span {
     
     .third-screen__images {
         margin-left: 0px;
-        width: 1800px;
+        min-width: 1409px;
         height: 560px;
         overflow: hidden;
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
-        row-gap: 30px;
+        row-gap: 15px;
     }
 
     .third-screen-image-item {
@@ -1287,6 +1290,11 @@ span {
         height: 184px;
         font-size: 16px;
         padding: 30px 20px 0;
+    }
+    .third-screen-image-item:after {
+        font-size: 18px;
+        line-height: 21px;
+        top: 223px;
     }
 
     .slider-buttons {
@@ -1325,7 +1333,7 @@ span {
 
     .fourth-screen-item__discr {
         padding-top: 22px;
-        width: 456px;
+        width: 428px;
     }
 
     .fourth-screen-item_second-text {
@@ -1344,8 +1352,21 @@ span {
         margin-top: 67px;
     }
 
+    .fourth-screen__item-2 .fourth-screen-item__discr {
+        width: 456px;
+    }
+
     .fourth-screen__item-3 {        
         margin-top: 93px;
+    }
+
+    .fourth-screen__item-3 .discription {
+        width: 456px;
+    }
+
+    .fourth-screen__item-3 .title {
+        width: 287px;
+
     }
 
     .fourth-screen-item__img {
@@ -1593,11 +1614,7 @@ span {
         padding: 0 20px;
     }
     .btn-reset {
-        padding: 16px 60px;
         font-size: 16px;
-        font-size: 16px;
-        line-height: 19px;
-        
     }
     .subtitle {
         font-size: 20px;
@@ -1909,9 +1926,10 @@ span {
         padding-bottom: 71px;
     }
     .third-screen__images {
-        width: 1020px;
+        min-width: 1019px;
         max-height: 390px;
         height: 390px;
+        row-gap: 30px;
     }
 
     .third-screen-image-item {
@@ -2486,7 +2504,7 @@ span {
         column-gap: 20px;
         row-gap: 20px;
         height: 300px;
-        width: 780px;
+        min-width: 779px;
     }
     /*         /THIRD           */ 
 
