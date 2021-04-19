@@ -126,17 +126,17 @@ h2,h3,h4 {
 }
 
 .logo {
+    display: none;
     visibility: hidden;
     padding: 23px 16.28px 0px 16.35px;
     border-right: 2px solid #F0F0F0;
 }
 
 .header__navigation {
-    left: 183px;
-    /* margin-left: -563px; */
-    position: absolute;
-    max-width: 800px;
-    width: 100%;
+    left: 12.7%;
+    margin-left: 0px;
+    /* position: absolute; */  
+    /* width: 100%; */
     padding-top: 32px;
 }
 
@@ -144,8 +144,19 @@ h2,h3,h4 {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    /* display: grid;
+    grid-template-columns: 2fr 1.05fr 1fr 1fr; */
     /* position: relative; */
 }
+
+.header__navigation-item {
+    margin-right: 130px;
+}
+
+.header__navigation-item :last-child {
+    margin-right: 0;
+}
+
 .header__navigation-item {
     color: #080029;
 }
@@ -613,14 +624,15 @@ span {
 }
 
 .fourth-screen-item {   
-    width: 824px;
+    max-width: 824px;
+    width: 100%;
     height: 312px;      
     display: flex;
     justify-content: space-between;
 }
 .fourth-screen-item__text {
     padding-top: 55px;
-    width: 456px;
+    max-width: 456px;
 }
 .fourth-screen-item_second-text {
     padding-top: 104px;
@@ -734,28 +746,36 @@ span {
 
 .fifth-screen__slider {
     margin-top: 25px;
-    max-width: 1064px;    
+    max-width: 1064px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
+
 .slider-button_white {
     background: #FCFCFC;
     transition: 0.2s all;
 }
+
 .slider-button_white:hover {
     background: hsl(0, 0%, 90%);
     transform: scale(1.02);
 }
+
 .slider-button_white:active {
     background: #cac8c8;
     transform: scale(0.98);
 }
+
 .review-card {    
     padding: 40px 40px 73px 40px;
     background: #FCFCFC;
     border-radius: 15px;
     max-width: 512px;
     height: 273px;
+}
+
+.fifth-screen__card2 {
+    margin-left: 40px;
 }
 .review-card__name-block {
     display: flex;    
@@ -810,7 +830,7 @@ span {
     padding: 50px 0 112px 0;
 }
 .sixth-screen__container {    
-    padding-right: 31px;
+    /* padding-right: 31px; */
 }
 .sixth-screen__subtitle {
     position: absolute;
@@ -838,6 +858,7 @@ span {
     cursor: pointer;
 }
 .map-card__image {
+    overflow: hidden;
     width: 344px;
     height: 218px; 
     
@@ -866,7 +887,8 @@ span {
 /*MAP*/
 .sixth-screen__map {
     margin-left: 24px;
-    width: 1223px;
+    width: 100%;
+    max-width: 1223px;
     height: 700px;
     position: relative;
     background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/world.png);
@@ -953,7 +975,8 @@ span {
     
     display: flex;
     justify-content: space-between;
-    width: 303px;
+    max-width: 303px;
+    width: 100%;
     position: relative;
 }
 .footer__logo-RS {
@@ -1060,11 +1083,17 @@ span {
 /*          /FOOTER          */
 
 
+
 @media screen and (max-width: 1210px) {
     .container { 
         max-width: 1120px;   
         padding-left: 144px; 
     }
+
+    .last_item {
+        margin-right: 0;
+    }
+    
     .btn-reset {
         padding: 16px 60px;
         font-size: 16px;
@@ -1090,9 +1119,17 @@ span {
     }
 
     .header__navigation {
-        left: 142px;        
-        max-width: 680px;        
+        /* left: 142px;        
+        max-width: 680px;         */
         padding-top: 19px;
+    }
+
+    .header__navigation-item {
+        margin-right: 100px;
+    }
+    
+    .last_item {
+        margin-right: 0;
     }
 
     .header__profile-button {
@@ -1179,7 +1216,7 @@ span {
     }
     
     .hero__title {
-        width: 497px;
+        max-width: 497px;
         margin: 35px 0 50px 0;
         font-size: 56px;
         line-height: 70px;
@@ -1325,20 +1362,22 @@ span {
     }
     
     .fourth-screen-item {
+        /* position: relative; */
         margin-top: 0px;
         margin-left: 144px;
-        width: 743px;
+        left: 14%;
+        max-width: 743px;
         height: 252px;
     }
 
     .fourth-screen-item__text {
         padding-top: 53px;
-        width: 456px;
+        max-width: 456px;
     }
 
     .fourth-screen-item__discr {
         padding-top: 22px;
-        width: 428px;
+        max-width: 428px;
     }
 
     .fourth-screen-item_second-text {
@@ -1350,7 +1389,11 @@ span {
     }
 
     .fourth-screen__item-1 {
+        margin: 0 auto;
         margin-top: 80px;
+        margin-right: 116px;
+        max-width: 716px;
+        
     }
 
     .fourth-screen__item-2-wrapper {
@@ -1364,25 +1407,27 @@ span {
     }
 
     .fourth-screen__item-2 .fourth-screen-item__discr {
-        width: 456px;
+        max-width: 456px;
     }
 
     .fourth-screen__item-3 {        
-        margin-top: 93px;
+        margin: 0 auto;
+        margin-top: 92px;
+        margin-right: 89px;        
     }
 
     .fourth-screen__item-3 .discription {
-        width: 456px;
+        max-width: 456px;
     }
 
     .fourth-screen__item-3 .title {
-        width: 287px;
+        /* max-width: 287px; */
 
     }
 
     .fourth-screen-item__img {
         height: 242px;
-        width: 242px;
+        max-width: 242px;
     }
     
     .fourth-screen__first-arrow {
@@ -1417,7 +1462,7 @@ span {
         padding: 40px 0 45px 0px;
     }
     .fifth-screen__discr {
-        width: 392px;
+        max-width: 392px;
         height: 100px;
         font-size: 16px;
         line-height: 154%;
@@ -1430,7 +1475,8 @@ span {
     }   
 
     .fifth-screen__slider {        
-        width: 957px;        
+        width: 957px; 
+        /* width: 100%;        */
     }
     .fifth-screen__card2 {
         display: none;
@@ -1438,7 +1484,7 @@ span {
 
     .review-card {
         padding: 30px 40px 73px 30px; 
-        width: 454px;
+        max-width: 454px;
         height: 235px;
     }
 
@@ -1474,30 +1520,39 @@ span {
     }
 
     .sixth-screen__content {
-        width: 978px;
+        max-width: 978px;
         height: 448px;
     }
 
     .sixth-screen__map {
         margin-top: 134px;
         margin-left: 0px;
-        width: 675px;
+        max-width: 675px;
+        width: 100%;
         height: 389px;         
         background-size: 100%;
     }
 
     .map-card { 
         margin-top: 134px;
-        width: 292px;
+        max-width: 292px;
         height: 448px;
     }
 
     .map-card__title {
-        margin: -3px 0 17px 0;
+        margin: 22px 0 17px 0;
     }
 
     .map-card__image {
         width: 306px;
+        height: 193px;
+        position: relative;
+    }
+
+    .map-card__image img {
+        position: absolute;
+        top: -11px;
+        left: -6px;
     }
 
     .map-card__btn { 
@@ -1541,7 +1596,7 @@ span {
     }
 
     .footer__content {
-        grid-template-columns: repeat(3, 289px 427px);
+        grid-template-columns: 0.72fr 1.05fr 1fr;
     }
 
     .footer__logos {
@@ -1555,9 +1610,10 @@ span {
 
     .footer__rs-logos {         
         height: 176px;
-        width: 128px;
-        display: grid;
-        grid-template-rows: repeat(3,64px);
+        max-width: 128px;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-rows: repeat(3,64px); */
         text-align: center;
         
     }
@@ -1590,13 +1646,13 @@ span {
 
     .footer__donation-discr {
         padding-top: 5px;
-        width: 332px;
+        max-width: 332px;
         height: 84px;
         font-size: 18px;
     }
 
     .footer__donation-btn {
-        width: 340px;
+        max-width: 340px;
         height: 61px;
         background: #0B0B0B;
         font-size: 18px;
@@ -1605,7 +1661,7 @@ span {
     .footer__third-column-social {
         padding-top: 10px;
         max-width: 382px;
-        width: 382px;
+        /* width: 382px; */
     }
 
     .footer__third-column-social-item a {
@@ -1639,6 +1695,9 @@ span {
         font-size: 16px;
         line-height: 154%;
     }
+    .logo {
+        display: block;
+    }
 
     /*          HEADER           */
     .header {
@@ -1654,7 +1713,8 @@ span {
 
     .header-mobile {
         padding: 0 20px 0 20px;
-        width: 640px;
+        max-width: 640px;
+        width: 100%;
         padding-top: 0;
         display: block;
         /* width: 600px; */
@@ -1823,7 +1883,7 @@ span {
     }
 
     .hero__title {
-        width: 315px;
+        max-width: 315px;
         height: 159px;
         font-size: 42px;
         line-height: 53px;
@@ -1838,17 +1898,21 @@ span {
     }
 
     .hero__image {
-        border-radius: 5px;
-        width: 401px;
+        max-width: 263px;
         height: 326px;
+        position: relative;
         overflow: hidden;
-        margin-top: 34px;
-        background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/panda-hero3.jpg) center;
+        border-radius: 5px;
         margin-left: 10px;
+        margin-top: 34px;
     }
 
     .hero__image img {
-        visibility: hidden;
+        max-width: 150%;
+        position: absolute;
+        top: -59px;
+        left: -61px;
+        border-radius: 5px;
     }
     
     
@@ -1993,7 +2057,7 @@ span {
         margin-top: 60px;
         display: flex;
         flex-direction: column;
-        width: 456px;
+        max-width: 456px;
         height: auto;
     }
 
@@ -2011,13 +2075,13 @@ span {
     .fourth-screen-item__discr {
         margin-top: 28px;
         font-size: 18px;
-        width: 428px;
+        max-width: 428px;
         height: 84px;
         margin-right: 0;
         padding-top: 0;
     }
     .fourth-screen-item_second-text .fourth-screen-item__discr {
-        width: 456px;
+        max-width: 456px;
         height: 144px;
     }
 
@@ -2033,7 +2097,7 @@ span {
 
     .fourth-screen__item-3 .fourth-screen-item__discr {
         height: 84px;
-        width: 456px;  
+        max-width: 456px;  
         font-size: 18px;
         line-height: 154%;      
         
@@ -2076,7 +2140,7 @@ span {
     }
 
     .fifth-screen__slider-button {        
-        margin-top: 64px;
+        margin-top: 80px;
     }
 
     .fifth-screen__content {
@@ -2124,17 +2188,29 @@ span {
     }
 
     .map-card__btn {
-        padding: 4px 70px;
+        padding: 11px 70px;
     }
 
     .map-card__image {
-        width: 250px;
+        max-width: 255px;
         height: 160px;
+    }
+
+    .map-card__image img {
+        top: -4px;
+        left: -1px;
+        max-width: 117%;
+    }
+
+    .map-card__dicr {
+        width: 212px; 
+        text-align: center;
+        font-size: 14px;
     }
 
     .sixth-screen__map {
         margin-top: -70px;
-        width: 600px;
+        max-width: 600px;
         height: 346px;   
     }
     /*         /SIXTH           */ 
@@ -2145,40 +2221,45 @@ span {
         padding: 80px 0 20px 0;
     }
     .footer__site-logo {
-        width: 95px;
-        height: 74px;
+        max-width: 95px;
+        max-height: 74px;
+    }
+
+    .footer__content {
+        /* column-gap: 75px;
+        grid-template-columns: 2fr 3fr 3fr; */
+        grid-template-columns: 1fr 1fr 0.86fr;
+    }
+
+    .footer__logos {
+        grid-column: 1/5;
+        margin-bottom: -50px;        
+        max-width: 474px;
+        height: 185px;
+        flex-direction:unset;
     }
 
     .footer__rs-logos {
-        position: absolute;
-        left: 36%;
-        top: 14.9%;
-        display: flex;
-        width: 264px;
+        /* display: flex; */
+        max-width: 264px;
+        /* width: 100%; */
         height: 49px;
+        /* padding-top: 25px; */
+        flex-direction: unset;
+        margin-top: 25px;      
     }
 
     .footer__logo-yem {
-        width: 93px;
+        max-width: 93px;
         height: 49px;
-    }
-
-    .footer_x {
-        position: absolute;
-        left: 122px;
-        top: 15px;
-    }
+    }   
 
     .footer__logo-RS {
-        width: 102px;
-        height: 38px;
-        position: absolute;
-        top: 6px;
+        max-width: 102px;
+        padding-top: 7px;
     }
 
     .footer__navigation {
-        position: absolute;
-        top: 215px;
         max-height: 364px;
     }
 
@@ -2191,16 +2272,17 @@ span {
     }
 
     .footer__third-column {
-        position: absolute;
-        top: 30.3%;
-        left: 36%;
+        max-height: 301px;
+        grid-column: 2/5;
     }
+    
     .footer__donation-discr {
         padding-top: 2px;
     }
 
     .footer__donation-btn  {
-        width: 318px;
+        padding: 0;
+        max-width: 318px;
         height: 59px;
     }
 
@@ -2211,19 +2293,14 @@ span {
 
     .footer__third-column-social-item a {
         font-size: 18px;
-    }
-
-    .footer__third-column-donation {
-        max-width: 339px;
-        height: 232px;
-    }
+    }    
 
     .footer__donation-subtitle {
         font-size: 22px;
     }
 
     .footer__copyright {
-        margin-top: 189px;
+        margin-top: 61px;
         padding: 20px 0 0px 0;
     }
 
@@ -2394,7 +2471,7 @@ span {
     }
 
     .hero__title {
-        width: 315px;
+        max-width: 315px;
         height: 159px;
         font-size: 42px;
         line-height: 53px;
@@ -2455,7 +2532,7 @@ span {
     .second-screen__image {
         width: 297px;
         height: 293px;
-        background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second(320).jpg");        
+        background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second(320).jpg") center no-repeat;        
     }
     /*         /SECOND           */ 
 
@@ -2541,17 +2618,23 @@ span {
     }
 
     .fourth-screen-item__text {
-        width: 300px;
+        max-width: 300px;
     }
 
     .fourth-screen-item__discr {
-        width: 300px;
+        max-width: 300px;
         margin-top: 21px;
         text-align: center;
     }
 
+    .fourth-screen__item-1 .fourth-screen-item__discr {
+        width: 277px;
+        margin-left: 11px;
+    }
+
     .fourth-screen-item_second-text .fourth-screen-item__discr {
-        width: 300px;
+        width: 287px;
+        margin-left: 5px;
     }
 
     .fourth-screen__item-3 .fourth-screen-item__discr {
@@ -2649,6 +2732,10 @@ span {
 
     .sixth-screen__map {
         display: none;
+    }
+
+    .sixth-sreen__anima-panel {
+        display: block;
     }
 
     .map-card {
@@ -2751,6 +2838,34 @@ span {
         padding: 0 10px;
     }
 
+    .footer__content {
+        column-gap: 160px;
+        grid-template-columns: none;
+    }
+
+    .footer__logos {
+        flex-direction: column;
+        max-width: 84px;
+        height: 277px;
+        grid-row: 1;
+        grid-column: 1/3;
+    }
+
+    .footer__navigation {
+        max-height: 283px;
+        max-width: 109px;
+        margin-bottom: 0;
+        grid-row: 1;
+        grid-column: 2/3;
+    }
+
+    .footer__third-column {
+        max-width: 300px;
+        grid-column: 1/5;
+        text-align: center;
+        margin-top: 62px;
+    }
+
     .footer__site-logo {
         width: 60px;
         height: 47px;
@@ -2758,27 +2873,31 @@ span {
 
     .footer__rs-logos {
         width: 84px;
-        height: 150px;
+        height: 132px;
         display: flex;
         flex-direction: column;
         flex-flow: wrap-reverse;
         justify-content: space-between;
         text-align: center;
-        left: 3%;
-        top: 24%;
+        /* left: 3%; */
+        top: -4%;
     }
     
     .footer__logo-yem {
         width: 80px;
-        height: 42px; 
+        height: 42px;
+        padding-top: 11px;
         position: unset;
     }
 
     .footer_x {
-        padding-top: 5px;
-        position: unset;
+        padding-top: 23px;
+        position: absolute;
         margin: 0 auto;
+        left: 0;
+        top: 0;
         font-size: 16px;
+        position: unset;
     }
 
     .footer__logo-RS {
@@ -2787,12 +2906,7 @@ span {
         position: unset;
     }
 
-    .footer__navigation {
-        position: absolute;
-        top: 61px;
-        left: 171px;
-        max-height: 283px;
-    }
+    
 
     .footer__navigation-subtitle {
         font-size: 18px;
@@ -2804,13 +2918,7 @@ span {
         font-size: 14px;
     }
 
-    .footer__third-column {
-        position: absolute;
-        top: 52.1%;
-        left: 3%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
+    
 
     .footer__third-column-donation {
         max-width: 300px;
@@ -2824,7 +2932,7 @@ span {
     }
 
     .footer__donation-discr {
-        width: 300px;
+        max-width: 300px;
         height: 66px;
         font-size: 14px;
         text-align: center;
@@ -2832,7 +2940,8 @@ span {
     }
 
     .footer__donation-btn {
-        width: 300px;
+        padding: 0;
+        max-width: 300px;
         height: 57px;
     }
 
@@ -2846,8 +2955,8 @@ span {
         font-size: 14px;
     }
 
-    .footer__copyright {
-        margin-top: 266px;
+    .footer__copyright {    
+        margin-top: 31px;
         padding: 20px 0 0px 0;
         display: flex;
         flex-direction: column;
@@ -2863,4 +2972,59 @@ span {
     }
     /*         /FOOTER           */ 
     
+}
+
+
+@media screen and (max-width: 1648px) {
+    .fourth-screen__first-arrow {
+        left: 38.7%;
+    }
+
+    .fourth-screen__second-arrow {
+        left: 26.2%;
+    }
+}
+@media screen and (max-width: 1426px) {
+    .fourth-screen__first-arrow {
+        left: 30.7%;
+    }
+
+    .fourth-screen__second-arrow {
+        left: 13.2%;
+    }
+}
+@media (max-width: 950px) {
+    .header__navigation-item {
+        margin-right: 50px;
+    }
+    .last_item {
+        margin-right: 0;
+    }
+    .header__container {
+        padding-left: 120px;
+    }
+}
+@media (max-width: 735px) {
+    .header__navigation-item {
+        margin-right: 40px;
+    }
+    .last_item {
+        margin-right: 0;
+    }
+    .header__container {
+        padding-left: 100px;
+    }
+}
+@media (max-width: 662px) {
+    .header__navigation-item {
+        margin-right: 20px;
+    }
+    .last_item {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 400px) {
+    .footer__third-column-social-item a {
+        font-size: 12px;
+    }
 }

@@ -44,7 +44,7 @@
         <!--            HEADER           -->
         <header class="header">
             <!-- <div class="site-wrapper">  -->
-                <div class="header__container container">
+                <div class="header__container">
                     <a href="" class="logo">
                         <img class="logo__img" src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/logo.svg" alt="Online Zoo logo">
                     </a>
@@ -53,17 +53,42 @@
                             <ul class="header__navigation-wrapper list-reset">
                                 <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/landing/main.html">About</a></li>
                                 <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/map/map.html">Map</a></li>
-                                <li><a class="header__navigation-item navigation-link header_active" >Zoos</a></li>
+                                <li><a class="header__navigation-item navigation-link header_active">Zoos</a></li>
                                 <li><a class="header__navigation-item navigation-link header_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/404/404.html">Contact us</a></li>
                                 <li><a class="header__navigation-item navigation-link header_disable" href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo">Design</a></li>
                             </ul>
                         </nav>
                     </div>
                     
-                    
                     <div class="header__profile-button">
                         <img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/profile.svg" alt="">
                     </div>
+                </div>
+
+                <div class="header-mobile">
+                    <a href="" class="logo">
+                        <img class="logo__img" src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/logo.svg" alt="Online Zoo logo">
+                    </a>
+    
+                    <input type="checkbox" id="checkbox" class="checkbox visually_hidden">
+                    <label class="burger" for="checkbox">
+                        <div class="hamburger">
+                            <span class="hamburger__bar bar1"></span>
+                            <span class="hamburger__bar bar2"></span>
+                            <span class="hamburger__bar bar3"></span>
+                            <span class="hamburger__bar bar4"></span>
+                        </div>
+                    </label>
+                    
+                    <nav class="header-mobile__navigation">
+                        <ul class="header-mobile__navigation-wrapper list-reset">
+                            <li><a class="header-mobile__navigation-item navigation-link header-mobile_disable">About</a></li>
+                            <li><a class="header-mobile__navigation-item navigation-link header-mobile_active" href="/trickster69-JSFE2021Q1/online-zoo/pages/zoos/panda/panda.html">Zoos</a></li>
+                            <li><a class="header-mobile__navigation-item navigation-link header-mobile_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/map/map.html">Map</a></li>                            
+                            <li><a class="header-mobile__navigation-item navigation-link header-mobile_disable" href="/trickster69-JSFE2021Q1/online-zoo/pages/404/404.html">Contact us</a></li>
+                            <li><a class="header-mobile__navigation-item navigation-link header-mobile_disable" href="#">Profile</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <h1>Online Zoo</h1>
             <!-- </div> -->
@@ -146,7 +171,13 @@
                                         <button class="second-screen__back-frame-btn btn-reset">Watch <span class="second-screen__arrow"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/right_white.svg" alt=""></span></button>
                                     </div>
                                 </div>
-                            </div>                            
+                            </div>
+
+                            <div class="second-screen__sliders-btns slider-buttons">
+                                <button class="slider-buttons__item btn-reset"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/Arrow 2.svg" alt=""></button>
+                                    <button class="slider-buttons__item btn-reset"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/Arrow 1.svg" alt=""></button>
+                            </div> 
+
                             </div>
                         </div>
                     
@@ -207,22 +238,22 @@
     
             
             <!--            FOURTH           -->
-            <section class="fourth-screen">
-                <!-- <div class="site-wrapper">  -->
-                    <div class="container fourth-screen__container">
-                        <div class="fourth-screen__content">
-                            <h2 id="pay-feed" class="fourth-screen__subtitle subtitle">Pay & feed</h2>
-    
-                            <div class="fourth-screen__item-1 fourth-screen-item">
-                                <div class="fourth-screen-item__img"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/Locked - Security.png" alt=""></div>
-                                <div class="fourth-screen-item__text">
-                                    <h3 class="title">Pay with VISA card</h3>
-                                    <div class="fourth-screen-item__discr discription">On the payment page, you need to enter the details of your "Visa" card and make a transfer. The operation will not take more than ~2 minutes.</div>
-                                </div>                        
-                            </div>
-    
-                            <div class="fourth-screen__first-arrow"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/dot-arr1.svg" alt=""></div>
-                            
+            <section class="fourth-screen">                
+                <div class="container fourth-screen__container">
+                    <div class="fourth-screen__content">
+                        <h2 id="pay-feed" class="fourth-screen__subtitle subtitle">Pay & feed</h2>
+
+                        <div class="fourth-screen__item-1 fourth-screen-item">
+                            <div class="fourth-screen-item__img"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/Locked - Security.png" alt=""></div>
+                            <div class="fourth-screen-item__text">
+                                <h3 class="title">Pay with VISA card</h3>
+                                <div class="fourth-screen-item__discr discription">On the payment page, you need to enter the details of your "Visa" card and make a transfer. The operation will not take more than ~2 minutes.</div>
+                            </div>                        
+                        </div>
+
+                        <div class="fourth-screen__first-arrow"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/dot-arr1.svg" alt=""></div>
+                        
+                        <div class="fourth-screen__item-2-wrapper">
                             <div class="fourth-screen__item-2 fourth-screen-item">
                                 <div class="fourth-screen-item__img"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/Delivery.png" alt=""></div>
                                 <div class="fourth-screen-item__text fourth-screen-item_second-text">
@@ -230,21 +261,22 @@
                                     <div class="fourth-screen-item__discr discription">Payment goes to the account of the zoo and volunteers with employees receive a notification about the donation.</div>
                                 </div>
                             </div>
-    
-                            <div class="fourth-screen__second-arrow">
-                                <img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/dot-arr2.svg" alt="">
-                            </div>
-    
-                            <div class="fourth-screen__item-3 fourth-screen-item">
-                                <div class="fourth-screen-item__img"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/Tasks  4.png" alt=""></div>
-                                <div class="fourth-screen-item__text fourth-screen-item_third-text">
-                                    <h3 class="title">The selected animal receives a treat</h3>
-                                    <div class="fourth-screen-item__discr discription">The staff takes the food you need for your chosen animal and delivers it to the animal. With your help, the animal is happy!</div>
-                                </div>
+                        </div>
+                        
+
+                        <div class="fourth-screen__second-arrow">
+                            <img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/dot-arr2.svg" alt="">
+                        </div>
+
+                        <div class="fourth-screen__item-3 fourth-screen-item">
+                            <div class="fourth-screen-item__img"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/images/Tasks  4.png" alt=""></div>
+                            <div class="fourth-screen-item__text fourth-screen-item_third-text">
+                                <h3 class="title">The selected animal <br> receives a treat</h3>
+                                <div class="fourth-screen-item__discr discription">The staff takes the food you need for your chosen animal and delivers it to the animal. With your help, the animal is happy!</div>
                             </div>
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>                
             </section>
             <!--            /FOURTH           -->
         </main>   
@@ -319,6 +351,6 @@
     
     
     
-
+        <script src="/trickster69-JSFE2021Q1/online-zoo/pages/landing/main.js"></script>
 </body>
 </html>
