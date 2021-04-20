@@ -2004,11 +2004,11 @@ span {
     }
 
     .third-screen__text {
-        margin-top: 60px;
         width: 189px;
-        margin-left: 206px;
         text-align: center;
         padding-bottom: 71px;
+        margin: 0 auto;
+        margin-top: 60px;
     }
     .third-screen__images {
         min-width: 1019px;
