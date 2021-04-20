@@ -892,6 +892,7 @@ span {
     height: 700px;
     position: relative;
     background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/world.png);
+    background-repeat: no-repeat;
 }
 
 /* .map-animal-icon {
@@ -1450,8 +1451,11 @@ span {
     }
 
     .fifth-screen__content {
-        width: 1388px;
+        max-width: 1388px;
         overflow: hidden;
+        display: grid;
+        grid-template-columns: 0.70fr 1fr;
+        column-gap: 4vw;
     }
 
     .fifth-screen__text {
@@ -1475,8 +1479,7 @@ span {
     }   
 
     .fifth-screen__slider {        
-        width: 957px; 
-        /* width: 100%;        */
+        max-width: 957px;
     }
     .fifth-screen__card2 {
         display: none;
@@ -1673,6 +1676,11 @@ span {
         padding: 40px 0 0px 0;
     }
     /*         /FOOTER           */  
+}
+@media screen and (max-width: 1199px){
+    .fourth-screen__item-2 {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -1938,7 +1946,8 @@ span {
 
     .second-screen__text {
         margin-top: 117px;
-        height: 448px;
+        height: auto;
+        margin-bottom: 60px;
     }
 
     .second-screen__subtitle {
@@ -2026,6 +2035,13 @@ span {
         line-height: 154%;
         padding: 25px 20px 0;
         text-align: center;
+    }
+
+    .third-screen-image-item:after {
+        font-size: 16px;
+        line-height: 19px;
+        top: 150px;
+        white-space: nowrap;
     }
 
     .slider-buttons {
@@ -2116,7 +2132,7 @@ span {
     }
 
     .fifth-screen__discr {
-        width: 392px;
+        max-width: 392px;
         height: 100px;
         font-size: 16px;
     }
@@ -2135,7 +2151,7 @@ span {
 
     .fifth-screen__sliders-btns {
         text-align: center;
-        margin-left: 234px;
+        margin: 0 auto;
         margin-top: 30px;
     }
 
@@ -2144,7 +2160,7 @@ span {
     }
 
     .fifth-screen__content {
-        width: 600px;
+        max-width: 600px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -2308,6 +2324,18 @@ span {
         font-size: 14px;
     }
     /*         /FOOTER           */ 
+}
+
+@media screen and (max-width: 560px) {
+    .hero__text {
+        margin-top: 0;
+        max-width: 497px;
+        height: auto;
+    }
+
+    .hero__buttons {
+        margin-top: 55px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -2498,7 +2526,7 @@ span {
 
     /*          SECOND           */ 
     .second-screen {
-        padding: 200px 0 16px 0;
+        padding: 58px 0 0px 0;
     }
 
     .second-screen__content {
@@ -2539,7 +2567,7 @@ span {
 
     /*          THIRD           */ 
     .third-screen {
-        padding: 60px 0 60px 0;
+        padding: 58px 0 60px 0;
     }
 
     .third-screen__text {
@@ -2550,6 +2578,7 @@ span {
 
     .third-screen__title {
         padding-top: 30px;
+        font-weight: bold;
     }
 
     .slider-buttons {
