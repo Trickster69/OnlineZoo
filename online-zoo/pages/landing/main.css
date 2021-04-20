@@ -1841,7 +1841,8 @@ span {
     .header-mobile__navigation {
         top: 80px;
         right: 700px;
-        width: 640px;
+        max-width: 640px;
+        width: 100%;
         height: 395px;
         position: absolute;
         z-index: 30;
@@ -2397,7 +2398,7 @@ span {
     .header-mobile__navigation {
         top: 57px;
         right: 700px;
-        width: 320px;
+        max-width: 320px;
         height: 395px;        
     }
 
