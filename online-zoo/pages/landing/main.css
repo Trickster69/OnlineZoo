@@ -2146,7 +2146,8 @@ span {
 
     .fifth-screen__slider {
         margin-top: 30px;
-        margin-left: 73px;
+        display: flex;
+        justify-content: center;
         text-align: left;
     }
 
