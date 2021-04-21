@@ -190,8 +190,10 @@ h1 {
     position: absolute;
     z-index: 2;
     max-width: 474px;
-    top: -18px;
-    left: 212px;
+    width: 100%;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .oops__text {
@@ -208,7 +210,7 @@ h1 {
 
 }
 .oops__button {
-    margin-left: 295px;
+   margin: 0 auto;
     margin-top: 50px;
     width: 309px;
     background: #0F0049;
@@ -218,8 +220,9 @@ h1 {
     position: absolute;
     opacity: 0.8;
     z-index: 1;
-    top: -42px;
-    left: 306px;
+    top: 47px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Merriweather';
     font-size: 144px;
     font-style: normal;
@@ -479,14 +482,15 @@ h1 {
     }  
 
     .oops__title {
-        left: 266px;
+        max-width: 369px;
+        width: 100%;
+
+        top: 0%;
     }
     
     .oops__button {
         width: 261px;
-        height: 51px;
-        /* margin-left: 266px; */
-        
+        height: 51px;        
         margin: 0 auto;
         margin-top: 50px;
         padding: 0;
@@ -495,9 +499,6 @@ h1 {
     .oops__404 {
         font-size: 120px;
         line-height: 151px;
-        top: -24px;
-        left: 331px;
-        /* margin: 0 auto; */
     }
 
     .oops__video {
@@ -795,16 +796,14 @@ h1 {
     }
 
     .oops__title {
-        left: 148px;
         font-size: 26px;
     }
 
     
     .oops__404 {
+        top: 7.5%;
         font-size: 96px;
         line-height: 121px;
-        top: -5px;
-        left: 225px;
     }
 
     .oops__text {
@@ -1086,16 +1085,19 @@ h1 {
 
     .oops__title {
         font-size: 20px;
-        left: 20px;
+        top: -1%;
+        width: 263px;
     }
 
     .oops__404 {
-        left: 57px;
+        top: 10.5%;
     }
 
     .oops__text {
+        width: 300px;
         font-size: 14px; 
         margin-top: 129px;
+        text-align: center;
     }
 
     .oops__button {
@@ -1296,32 +1298,6 @@ h1 {
     }
 }
 
-@media (max-width: 512px) {
-    .oops__title {
-        left: 77px;
-    }
-    .oops__404 {
-        left: 160px;
-    }
-}
-
-@media (max-width: 423px) {
-    .oops__title {
-        left: 38px;
-    }
-    .oops__404 {
-        left: 126px;
-    }
-}
-
-@media (max-width: 340px) {
-    .oops__title {
-        left: 0px;
-    }
-    .oops__404 {
-        left: 81px;
-    }
-}
 @media screen and (max-width: 400px) {
     .footer__third-column-social-item a {
         font-size: 12px;
