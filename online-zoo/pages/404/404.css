@@ -927,7 +927,15 @@ h1 {
     }
     /*         /FOOTER           */ 
 }
+@media screen and (max-width: 409px) {
+    .oops__button {
+        margin-top: 50px;
+    }
 
+    .oops__text-block {
+        height: 290px;
+    }
+}
 @media screen and (max-width: 320px) {    
     .container { 
         width: 320px;   
@@ -1077,6 +1085,10 @@ h1 {
     .oops__inner {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .oops__text-block {
+        height: 275px;
     }
 
     .oops__text-block {
