@@ -376,13 +376,15 @@ h2,h3,h4 {
 
 .hero__image {
     border-radius: 5px;
-    max-width: 696px;
-    max-height: 673px;
-    overflow: hidden;    
+    width: 696px;
+    height: 673px;
+    overflow: hidden;
+    position: relative;
 }
 
 .hero__image img {
     margin-top: -28.75%;
+    position: absolute;
 }
 /*          ANIMATION I          */
 .hero__dot-i {
@@ -431,10 +433,20 @@ span {
 
 .second-screen__image {
     width: 512px;
-    height: 758px;
+    position: relative;
+    height: 760px;
     overflow: hidden;
     border-radius: 5px;
-    background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second (1).jpg");
+}
+
+.second-screen__image img {
+    border-radius: 5px;
+    /* width: 222%; */
+    /* margin-top: -28.75%; */
+    left: -18.6vw;
+    position: absolute;
+    top: 0;
+    max-width: 222%;
 }
 
 .second-screen__text {
@@ -1264,11 +1276,13 @@ span {
     
     .second-screen__image {
         width: 401px;
-        height: 588px;
-        overflow: hidden;
-        border-radius: 5px;
-        background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second(1200).jpg");
+        height: 588px;        
         margin-top: 58px;
+    }
+
+    .second-screen__image img {
+        max-width: 220%;
+        left: -295px;
     }
 
     .second-screen__text {
@@ -1682,6 +1696,39 @@ span {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 910px) {
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero__image {
+        max-width: 263px;
+        height: 326px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 34px;
+    }
+    .hero__image img {
+        max-width: 150%;
+        position: absolute;
+        top: -59px;
+        left: -61px;
+        border-radius: 5px;
+    }
+
+    .second-screen__content {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+} /*HERO and SECOND img Block column*/
 
 @media screen and (max-width: 640px) {
     .container { 
@@ -1891,6 +1938,14 @@ span {
         }
     }
 
+    .hero__content {
+        display: flex;
+        flex-direction: unset;
+        flex-flow: unset;
+        text-align: left;
+        justify-content: space-between;
+    }
+
     .hero__title {
         max-width: 315px;
         height: 159px;
@@ -1971,10 +2026,13 @@ span {
         text-align: center;
         justify-content: center;
         width: 390px;
-        height: 386px;
-        overflow: hidden;
-        border-radius: 5px;
-        background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second(640).jpg");        
+        height: 386px;  
+    }
+
+    .second-screen__image img {
+        left: -185px;
+        top: -41px;
+        max-width: 174%;
     }
 
     
@@ -2328,15 +2386,21 @@ span {
     /*         /FOOTER           */ 
 }
 
-@media screen and (max-width: 560px) {
-    .hero__text {
-        margin-top: 0;
-        max-width: 497px;
-        height: auto;
+@media screen and (max-width: 607px) {
+    .hero {
+        padding-bottom: 91px;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap-reverse;
+        text-align: center;
+        justify-content: center;
     }
 
     .hero__buttons {
-        margin-top: 55px;
+        margin: 0 auto;
     }
 }
 
@@ -2479,6 +2543,7 @@ span {
     /*          HERO           */ 
     .hero {
         padding-top: 86px;
+        padding-bottom: 145px;
     }
 
     .hero__subtitle {
@@ -2561,8 +2626,13 @@ span {
     }
     .second-screen__image {
         width: 297px;
-        height: 293px;
-        background: url("/trickster69-JSFE2021Q1/online-zoo/assets/images/cat-second(320).jpg") center no-repeat;        
+        height: 293px;     
+    }
+
+    .second-screen__image img {
+        max-width: 237%;
+        left: -233px;
+        top: -79px;
     }
     /*         /SECOND           */ 
 
@@ -2722,7 +2792,7 @@ span {
     }
 
     .fifth-screen__slider {
-        width: 620px;
+        max-width: 620px;
         height: 304px;
         margin-left: 0;
         margin-top: 22px;
