@@ -314,6 +314,7 @@ h2,h3,h4 {
 }
 .hero__content {
     display: flex;
+    column-gap: 1vw;
     max-width: 1433px;
     justify-content: space-between;
     
@@ -427,6 +428,7 @@ span {
 
 .second-screen__content {
     display: flex;
+    column-gap: 1vw;
     max-width: 1433px;
     justify-content: space-between;
 }
@@ -537,10 +539,6 @@ span {
     min-width: 1772px;
     height: 700px;    
     overflow: hidden;
-    /* display: grid;
-    gap: 37px;
-	grid-template-columns: repeat(3, 1fr); */
-    
     display: flex;
     flex-wrap: wrap;
     column-gap: 37px;
@@ -549,76 +547,88 @@ span {
 
 .third-screen-image-item {
     position: relative;
-    transition: 0.2s all;
-    
+    transition:1s all;    
+}
+
+.third-screen-image-item__name {
+    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FCFCFC;
+    opacity: 0.8;
+    left: 50%;
+    top: 88.4%;
+    transform: translate(-50%, -50%);
+}
+.third-screen-image-item__button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(252, 252, 252, 1);
+    position: absolute;
+    left: 52%;
+    top: 88.4%;
+    transform: translate(-52%, -52%);   
+    display: none;
+    text-decoration: none;
 }
 .third-screen-image-item:before {
     content: "+"; 
     font-weight: 300;
     font-size: 44px;
     line-height: 145%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
     color: #FCFCFC;
     opacity: 0.8;
 
     width: 76px;
     height: 76px;  
     border-radius: 50%;
-    border: 2px solid rgba(252, 252, 252, 0.6);
-    opacity: 0.6;
-    text-align: center;    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
     position: absolute;
-    top: 49%;
-    left: 39%;
-    transition: 0.05s all;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(252, 252, 252, 0.6);
     
+    transition: 0.2s ease-out;    
 }
+
 .third-screen-image-item:hover:before {
+    content: attr(id);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 154%;
+    opacity: 1;
+    color: #FCFCFC;
+
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    padding: 91px 20px 0;
-    content: attr(data-area);
-    font-weight: normal;
-    opacity: 1;
-    font-size: 18px;
-    line-height: 154%;
-    color: #FCFCFC;
+    padding: 0px 20px;
+    
     width: 238px;
     height: 238px;
+    background: rgba(11, 11, 11, 0.1);  
     border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
-.third-screen-image-item:after {
-    content: attr(id);
-    position: absolute;
-    top: 284px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FCFCFC;
-    opacity: 0.8;
+ .third-screen-image-item:hover .third-screen-image-item__name {
+    display: none;
 }
-.third-screen-image-item:hover:after {
-    content: "Follow " url('/trickster69-JSFE2021Q1/online-zoo/assets/icons/Arrow_card.svg'); 
-    opacity: 1; 
-    cursor: pointer;
+.third-screen-image-item:hover .third-screen-image-item__button {
+    display: block;
 }
 
 .third-screen-image-item img {
     border-radius: 5px;
 }
-/* .third-screen__text {
-    position: absolute;
-} */
-
 /*          /THIRD          */
 
 
@@ -849,9 +859,10 @@ span {
     padding-top: 50px;
 }
 .sixth-screen__content {
+    grid-template-columns: 1fr 4fr;
     max-width: 1591px;
-    display: flex;
-    justify-content: space-between;
+    column-gap: 1vw;
+    display: grid;
 }
 .map-card {
     margin-top: 138px;
@@ -898,13 +909,14 @@ span {
 
 /*MAP*/
 .sixth-screen__map {
-    margin-left: 24px;
+    position: relative;
+    /* margin-left: 24px;
     width: 100%;
     max-width: 1223px;
     height: 700px;
-    position: relative;
+    
     background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/world.png);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /* .map-animal-icon {
@@ -1543,11 +1555,8 @@ span {
 
     .sixth-screen__map {
         margin-top: 134px;
-        margin-left: 0px;
-        max-width: 675px;
-        width: 100%;
-        height: 389px;         
-        background-size: 100%;
+        max-width: 675px;        
+        height: 389px;  
     }
 
     .map-card { 
@@ -1696,7 +1705,13 @@ span {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 1000px){
+    .header__profile-button {
+        margin: 11px 20px 16px 0;
+    }
+}
 @media screen and (max-width: 910px) {
+    
     .hero__content {
         display: flex;
         flex-direction: column;
@@ -2092,16 +2107,21 @@ span {
         height: 129.05px; 
         font-size: 14px;
         line-height: 154%;
-        padding: 25px 20px 0;
+        padding: 25px 0px;
         text-align: center;
     }
 
-    .third-screen-image-item:after {
+    .third-screen-image-item__name {
         font-size: 16px;
         line-height: 19px;
-        top: 150px;
         white-space: nowrap;
     }
+
+    .third-screen-image-item__button {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
 
     .slider-buttons {
         margin-top: 35px;
@@ -2240,10 +2260,9 @@ span {
     }
 
     .sixth-screen__content {
-        flex-direction: column;
         height: auto;
-        /* justify-content: center; */
         width: auto;
+        grid-template-columns: auto;
     }
 
     .sixth-screen__subtitle {
@@ -2386,7 +2405,7 @@ span {
     /*         /FOOTER           */ 
 }
 
-@media screen and (max-width: 607px) {
+@media screen and (max-width: 615px) {
     .hero {
         padding-bottom: 91px;
     }
@@ -2677,7 +2696,18 @@ span {
         width: 100px;
         height: 100px;
         font-size: 12px;
-        padding: 3px 3px 0;
+        padding: 3px 0px;
+    }
+
+    .third-screen-image-item__name {
+        font-size: 14px;
+        line-height: 17px;
+        top: 90.4%;
+    }
+
+    .third-screen-image-item__button {
+        font-size: 14px;
+        line-height: 17px;
     }
 
     .third-screen-image-item:after {
