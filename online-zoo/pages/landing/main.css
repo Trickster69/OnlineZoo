@@ -1711,8 +1711,23 @@ span {
     }
 }
 @media screen and (max-width: 910px) {
-    
-    .hero__content {
+    .hero__watch-button {
+        display: none;
+    }
+
+    .hero__title {
+        max-width: 330px;
+        max-height: 213px;
+        height: 100%;
+        font-size: 45px;
+        line-height: 53px;
+    }
+
+    .hero__inner {
+        /* max-width: 1120px; */
+        padding-left: 100px;
+    }
+    /* .hero__content {
         display: flex;
         flex-direction: column;
         flex-flow: wrap-reverse;
@@ -1742,9 +1757,18 @@ span {
         flex-flow: wrap-reverse;
         text-align: center;
         justify-content: center;
-    }
+    } */
 } /*HERO and SECOND img Block column*/
+@media screen and (max-width: 803px) {
+    .hero__title {
+        max-width: 420px;
+        font-size: 38px;
+    }
 
+    .hero__inner {
+        padding-left: 80px;
+    }
+}
 @media screen and (max-width: 640px) {
     .container { 
         max-width: 640px;   
