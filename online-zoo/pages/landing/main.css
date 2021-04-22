@@ -1768,7 +1768,7 @@ span {
     .hero__inner {
         padding-left: 80px;
     }
-}
+}/*HERO and SECOND img Block column*/
 @media screen and (max-width: 640px) {
     .container { 
         max-width: 640px;   
@@ -2445,7 +2445,7 @@ span {
     .hero__buttons {
         margin: 0 auto;
     }
-}
+}/*HERO and SECOND img Block column*/
 
 @media screen and (max-width: 320px) {
     .container { 

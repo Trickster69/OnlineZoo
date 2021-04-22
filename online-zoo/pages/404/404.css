@@ -169,12 +169,13 @@ h1 {
 .oops__inner {
     max-width: 1800px;    
 	margin: 0 auto;
+    padding: 0 10px;
 }
 
 .oops__content {
     margin: 0 auto;
     max-width: 900px;
-    position: relative;
+    position: relative;    
 }
 
 .oops__text-block {
@@ -1085,6 +1086,7 @@ h1 {
     .oops__inner {
         max-width: 300px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .oops__text-block {
