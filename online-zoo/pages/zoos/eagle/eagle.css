@@ -180,6 +180,9 @@ h1 {
 
 
 /*          ASIDE           */
+.aside-mobile {
+    display: none;
+}
 .aside-wrapper {
     width: 1800px; 
     margin: 0 auto;
@@ -1482,60 +1485,76 @@ h1 {
     /*         /HEADER           */ 
 
     /*          ASIDE           */ 
-    .aside__logo {
+    .aside-wrapper {
         display: none;
     }
 
-    .aside-wrapper{
-       width: 80px;
-       /* height: 600px; */
-       
-      
-    }
-
-    .aside-line {
-        width: 0;
-        height: 0;
-        position: fixed;        
-        top: 30%;
-        top: 60%;
-        left: 43.6%;
-        z-index: 5;
-    }
-
-    .aside {
-        transform: rotate(270deg);
-        width: 80px;
-        height: 600px;
+    .aside-mobile {
+        height: 76px;
+        max-width: 596px;
+        display: block;
+        top: 86%;
+        position: sticky;
+        z-index: 10;
+        margin: 0 auto;
         border-radius: 15px;
         overflow: hidden;
         background: #FCFCFC;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
     }
 
-    .aside__content {
-        height: 596px;
-        width: 76px;
-        
+    .aside-mobile__content {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .aside__animals {
-        width: 45px;
-        height: 462px;
+    .aside-mobile__animals {
+        height: 45px;
+        max-width: 462px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vw;
     }
 
-    .aside__animal-item {
+    .aside-mobile_arrow-btn {
+        background: #FCFCFC;
+        width: 66px;
+        height: 76px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .aside-mobile_arrow-btn:hover {
+        background: #f7f3f3;
+        transition: 0.2s;
+    }
+
+    .aside-mobile__animal-item {
+        position: relative;
         width: 45px;
         height: 45px; 
-        transform: rotate(90deg);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.2s all;
+    }
+
+    .aside-mobile__animal-item img {
+        height: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
     }
 
     .acide_disable:hover {
-        transform: rotate(90deg);
     }
 
     .acide_active {
-        transform: rotate(90deg);
     }
 
     .aside__animal-item-question {
@@ -1545,6 +1564,10 @@ h1 {
     .aside_arrow-btn {
         width: 76px;
         height: 66px;
+    }
+
+    .aside-mobile__animal-item-question {
+        display: none;
     }
     /*         /ASIDE           */ 
     
