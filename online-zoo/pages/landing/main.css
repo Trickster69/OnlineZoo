@@ -1714,6 +1714,37 @@ span {
     .header__profile-button {
         margin: 11px 20px 16px 0;
     }
+
+    .fifth-screen__container {
+        max-width: 640px;
+        padding: 0 20px;
+    }
+    
+    .fifth-screen__content {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .fifth-screen__sliders-wrapper {
+        margin: 0 auto;
+    }
+
+    .fifth-screen__slider-button {
+        margin-top: 80px;
+    }
+
+    .fifth-screen__text {
+        margin: 0 auto;
+    }
+    
+    .fifth-screen__sliders-btns {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 910px) {
     .hero__watch-button {
@@ -1774,12 +1805,12 @@ span {
         padding-left: 80px;
     }
 
-    .review-card {
+    /* .review-card {
         height: 300px;
-    }
+    } */
 
 
-}/*HERO and SECOND img Block column and REVIEW CARD*/
+}/*HERO and SECOND img Block column */
 @media screen and (max-width: 640px) {
     .container { 
         max-width: 640px;   
