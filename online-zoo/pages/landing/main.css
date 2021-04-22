@@ -1107,6 +1107,11 @@ span {
 }
 /*          /FOOTER          */
 
+@media screen and (max-width: 1400px) {
+    .review-card {
+        height: 380px;
+    }
+}
 
 
 @media screen and (max-width: 1210px) {
@@ -1768,7 +1773,13 @@ span {
     .hero__inner {
         padding-left: 80px;
     }
-}/*HERO and SECOND img Block column*/
+
+    .review-card {
+        height: 300px;
+    }
+
+
+}/*HERO and SECOND img Block column and REVIEW CARD*/
 @media screen and (max-width: 640px) {
     .container { 
         max-width: 640px;   
@@ -2251,6 +2262,11 @@ span {
         display: flex;
         justify-content: center;
         text-align: left;
+    }
+
+    .review-card {
+        height: 300px;
+        height: 235px;
     }
 
     .fifth-screen__sliders-btns {
