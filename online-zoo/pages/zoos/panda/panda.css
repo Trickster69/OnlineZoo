@@ -50,7 +50,8 @@ h1 {
 .container {
 	max-width: 1800px;    
 	margin: 0 auto;    
-    padding-left: 184px;
+    /* padding-left: 184px; */
+    padding-left: 9.6vw;
 }
 
 .navigation-link {
@@ -150,7 +151,8 @@ h1 {
 }
 
 .header__profile-button {    
-    margin: 16px 85px 16px 0 ;    
+    /* margin: 16px 85px 16px 0 ;     */
+    margin: 16px 4.5vw 16px 0;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -295,37 +297,54 @@ h1 {
 
 
 /*          HERO           */
+.first-page {
+    background: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+}
 .hero {
     padding-top: 73px;
     padding-bottom: 60px;    
     background: #FCFCFC;
 }
+.hero-mobile__donate {
+    display: none;
+}
 
 .hero__content {
     max-width: 1503px;
     height: 598px;
-    display: flex;    
-    justify-content: space-between;    
+    display: flex;   
+    flex-direction: column;
+    flex-wrap: wrap;  
+    column-gap: 2vw;
 }
 
 .hero__video {
     border-radius: 5px;
     overflow: hidden;
-    max-width: 1064px;
+    /* max-width: 1064px; */
+    max-width: 55.5vw;
     width: 100%;
     height: 599px;
-    margin-right: 15px;
 }
 
-.hero__info {
+/* .hero__info {
     max-width: 399px;
-}
+} */
 
 .hero__dicription-zoo {    
     height: 69px;
     padding-bottom: 110px;
     border-bottom:  1px solid #E3E3E3;
     display: flex;
+    /* max-width: 21vw; */
+    max-width: 397px;
+}
+.hero__zoo-avatar {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
 }
 
 .hero__zoo-avatar img {
@@ -361,11 +380,13 @@ h1 {
 
 .hero__donate {    
     padding-top: 40px;
-    max-width: 400px;
+    /* max-width: 21vw; */
+    max-width: 397px;
     height: 331px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1vw;
 }
 
 .hero__donate-title {
@@ -385,7 +406,8 @@ h1 {
 .hero__donate-button {
     background: #0F0049;
     color: #FCFCFC;
-    max-width: 284px;
+    max-width: 210px;
+    padding: 20px 0;
 }
 
 .hero__donate-button:hover {
@@ -409,6 +431,7 @@ h1 {
     height: 381px;    
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .second-screen__button {
@@ -436,6 +459,7 @@ h1 {
     margin-top: -8px;
     display: flex;
     justify-content: space-between;
+    column-gap: 1vw;
 }
 
 .second-screen__frame-item {
@@ -804,6 +828,16 @@ h1 {
     .fourth-screen__second-arrow {
         left: 26.2%;
     }
+
+    .fourth-screen__item-1 {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .fourth-screen__item-3 {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width: 1426px) {
     .fourth-screen__first-arrow {
@@ -817,7 +851,7 @@ h1 {
 @media screen and (max-width: 1200px) { 
     .container { 
         max-width: 1120px;   
-        padding-left: 144px; 
+        padding-left: 12vw; 
     }
     .btn-reset {
         /* padding: 16px 60px; */
@@ -855,7 +889,8 @@ h1 {
     }
 
     .header__profile-button {
-        margin: 12px 71px 15px 0;
+        /* margin: 12px 71px 15px 0; */
+        margin: 12px 5.9vw 15px 0;
         width: 42px;
         height: 42px;
     }
@@ -924,17 +959,20 @@ h1 {
     /*           HERO          */
     .hero {
         padding-top: 67px;
-        padding-bottom: 65px;
+        padding-bottom: 4px;
     }
 
     .hero__content {
         max-width: 918px;
-        height: 293px;
+        height: 354px;
+        column-gap: 1.3vw;
     }
 
     .hero__video {
-        max-width: 545px;
+        max-width: 45.5vw;
         height: 307px;
+        margin-right: 1.2vw;
+
     }
 
     .hero__info {
@@ -945,6 +983,9 @@ h1 {
         height: 49px;
         padding-bottom: 0px;
         border-bottom: none;
+        display: flex;
+        align-items: flex-start;
+        max-width: 29vw;
     }
 
     .hero__zoo-avatar {
@@ -976,15 +1017,16 @@ h1 {
     .hero__donate {
         padding-top: 31px;
         height: 259px;
+        max-width: 30vw;
     }
 
     .hero__donate-title {
         font-size: 22px;
-        width: 343px;
+        max-width: 343px;
     }
 
     .hero__donate-subtitle {
-        width: 374px;
+        max-width: 374px;
     }
     /*          /HERO          */
 
@@ -1255,55 +1297,51 @@ h1 {
     }
     /*         /FOOTER           */ 
 }   /*ОСНОВА*/
+@media (max-width: 1260px) {
+    .hero__dicription-zoo {
+        max-width: 369px;
+    }
+
+    .hero__donate {
+        max-width: 369px;
+    }
+}
 @media screen and (max-width: 1199px){
     .fourth-screen__item-2 {
         margin: 0 auto;
     }
 }
-@media (max-width: 926px) {
+@media (max-width: 1000px) {
     .header__navigation {
         margin-left: -29px;
         max-width: 500px;
+    }    
+} /*Header */
+@media (max-width: 970px) {
+    .hero__dicription-zoo {
+        max-width: 100%;
     }
-}
-@media (max-width: 735px) {
-    .header__navigation {
-        max-width: 400px;
+    .hero__zoo-name-and-online {
+        padding-left: 8px;
     }
+    .hero__donate {
+        max-width: 303px;
+    }
+    .hero__content {
+        column-gap: 0;
+    }    
+    .hero__name-zoo {
+        font-size: 18px;
+    }
+    .hero__donate-title {
+        font-size: 19px;
+    }
+} /*Размер кнопки доната и зоопарка*/
+
+
+@media screen and (max-width: 800px) { 
     .container { 
-        padding-left:100px ;
-    }
-    .footer__third-column-social {
-        max-width: 318px;
-    }
-
-    .footer__donation-btn {
-        max-width: 250px;
-        padding: 0;
-    }
-}
-@media (max-width: 700px) {
-    .footer__donation-subtitle {
-        font-size: 18px;
-    }
-
-    .footer__navigation-subtitle {
-        font-size: 18px;
-    }
-
-    .footer__donation-btn {
-        max-width: 250px;
-        padding: 0;
-    }
-
-    .footer__third-column-social-item a {
-        font-size: 18px;
-    }
-
-}
-@media screen and (max-width: 640px) { 
-    .container { 
-        max-width: 640px;   
+        max-width: 100%;   
         padding: 0 20px;
     }
     .btn-reset {
@@ -1336,7 +1374,7 @@ h1 {
 
     .header-mobile {
         padding: 0 20px 0 20px;
-        max-width: 640px;
+        max-width: 100%;
         width: 100%;
         padding-top: 0;
         display: block;
@@ -1454,8 +1492,8 @@ h1 {
 
     .header-mobile__navigation {
         top: 80px;
-        right: 700px;
-        max-width: 640px;
+        right: 900px;
+        max-width: 100%;
         width: 100%;
         height: 395px;
         position: absolute;
@@ -1571,23 +1609,35 @@ h1 {
 
 
     /*          HERO           */ 
+    .hero__inner  {
+        padding: 0 0 0 20px;
+    }
+    .first-page{
+        display: flex;
+        flex-direction: unset;
+        column-gap: 3vw;
+    }
+
     .hero {
-        padding-top: 155px;
+        padding-top: 62px;
+    }
+
+    .hero__content {
+        height: 607px;
+        gap: 0.4vw
     }
 
     .hero__video {
-        position: absolute;
-        top: 6.2%;
-        left: 3%;
-        max-width: 390px;
-        width: 100%;
+        /* max-width: 390px; */
+        max-width: 100%;
         height: 218px;
+        order: 2;
+        width: 61vw;
+        margin-top: 20px;
     }
 
     .hero__dicription-zoo {
-        position: absolute;
-        top: 4.05%;
-        left: 3%;
+        max-width: 43vw;
     }
 
     .hero__zoo-name-and-online {
@@ -1607,10 +1657,10 @@ h1 {
     }
 
     .hero__donate {
-        position: absolute;
-        top: 12.35%;
-        left: 3%;
-        height: 270px;
+        padding-top: 51px;
+        height: 290px;
+        order: 3;
+        max-width: 57vw;
     }
 
     .hero__donate-button {
@@ -1621,7 +1671,7 @@ h1 {
 
     /*          SECOND           */ 
     .second-screen {
-        position: absolute;
+        /* position: absolute; */
         top: 4.7%;
         left: 68.8%;
         padding-bottom: 0;
@@ -1635,7 +1685,9 @@ h1 {
     .second-screen__content {        
         height: 270px;
         max-width: 181px;
-        overflow: hidden;
+        overflow: hidden;   
+        /* overflow: hidden;  скрытие  */ 
+        margin-top: 81px;
         
     }
 
@@ -1652,6 +1704,7 @@ h1 {
         flex-direction: column;
         height: 218px;
         row-gap: 15px;
+        width: auto;
     }
 
     .second-screen__frame-item {
@@ -1668,12 +1721,11 @@ h1 {
 
     /*          THIRD           */ 
     .third-screen {
-        position: relative;
-        top: 300px;
+        padding-top: 62px;
     }
 
     .third-screen__content {
-        max-width: 600px;
+        max-width: 100%;
     }
     
     .third-screen__title {
@@ -1686,11 +1738,11 @@ h1 {
 
     .third-screen__accordeon {
         margin-top: 2px;
-        max-width: 600px;
+        max-width: 100%;
     }
 
     .accordeon-item__text {
-        max-width: 600px;
+        max-width: 100%;
     }
 
     .accordeon-item__title {
@@ -1698,237 +1750,188 @@ h1 {
     }
     /*         /THIRD           */ 
 
-
     /*          FOURTH           */ 
-    .fourth-screen {
-        padding-bottom: 118px;
-        padding-top: 318px;
-    }
+    @media (max-width: 640px) {         
+        .fourth-screen {
+            padding-bottom: 118px;
+            padding-top: 20px;
+        }
 
-    .fourth-screen__subtitle {
-        margin-left: 0px;
-        text-align: center;
-        margin-top: 80px;
-    }
+        .fourth-screen__subtitle {
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 80px;
+        }
 
-    .fourth-screen-item {
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 60px;
-        display: flex;
-        flex-direction: column;
-        max-width: 456px;
-        height: auto;
-    }
+        .fourth-screen-item {
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            max-width: 456px;
+            height: auto;
+        }
 
-    .fourth-screen-item__img {
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-    }
+        .fourth-screen-item__img {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+        }
 
-    .fourth-screen-item__text {
-        padding: 0;
-        margin-top: 31px;
-    }
+        .fourth-screen-item__text {
+            padding: 0;
+            margin-top: 31px;
+        }
 
-    .fourth-screen-item__discr {
-        margin-top: 28px;
-        font-size: 18px;
-        max-width: 428px;
-        height: 84px;
-        margin-right: 0;
-        padding-top: 0;
-    }
-    .fourth-screen-item_second-text .fourth-screen-item__discr {
-        max-width: 456px;
-        height: 144px;
-    }
+        .fourth-screen-item__discr {
+            margin-top: 28px;
+            font-size: 18px;
+            max-width: 428px;
+            height: 84px;
+            margin-right: 0;
+            padding-top: 0;
+        }
+        .fourth-screen-item_second-text .fourth-screen-item__discr {
+            max-width: 456px;
+            height: 144px;
+        }
 
-    .fourth-screen__item-3 .fourth-screen-item__img{
-        height: 242px;
-        width: 242px;        
+        .fourth-screen__item-3 .fourth-screen-item__img{
+            height: 242px;
+            width: 242px;        
+            
+        }
+
+        .fourth-screen__item-3 {
+            margin-top: -5px;
+        }
+
+        .fourth-screen__item-3 .fourth-screen-item__discr {
+            height: 84px;
+            max-width: 456px;  
+            font-size: 18px;
+            line-height: 154%;      
+            
+        }
+        /*         /FOURTH           */ 
+
+
+        /*          FOOTER           */            
+        .footer {
+            padding: 80px 0 20px 0;
+        }
+        .footer__site-logo {
+            max-width: 95px;
+            max-height: 74px;
+        }
+
+        .footer__content {
+            /* column-gap: 75px;
+            grid-template-columns: 2fr 3fr 3fr; */
+            grid-template-columns: 1fr 1fr 0.86fr;
+        }
+
+        .footer__logos {
+            grid-column: 1/5;
+            margin-bottom: -50px;        
+            max-width: 474px;
+            height: 185px;
+            flex-direction:unset;
+        }
+
+        .footer__rs-logos {
+            /* display: flex; */
+            max-width: 264px;
+            /* width: 100%; */
+            height: 49px;
+            /* padding-top: 25px; */
+            flex-direction: unset;
+            margin-top: 25px;      
+        }
+
+        .footer__logo-yem {
+            max-width: 93px;
+            height: 49px;
+        }   
+
+        .footer__logo-RS {
+            max-width: 102px;
+            padding-top: 7px;
+        }
+
+        .footer__navigation {
+            max-height: 364px;
+        }
+
+        .footer__navigation-subtitle {
+            font-size: 22px;
+        }
+
+        .footer-navigation__item a {
+            font-size: 16px;
+        }
+
+        .footer__third-column {
+            max-height: 301px;
+            grid-column: 2/5;
+        }
         
-    }
+        .footer__donation-discr {
+            padding-top: 2px;
+        }
 
-    .fourth-screen__item-3 {
-        margin-top: -5px;
-    }
+        .footer__donation-btn  {
+            padding: 0;
+            max-width: 318px;
+            height: 59px;
+        }
 
-    .fourth-screen__item-3 .fourth-screen-item__discr {
-        height: 84px;
-        max-width: 456px;  
-        font-size: 18px;
-        line-height: 154%;      
-        
-    }
-    /*         /FOURTH           */ 
+        .footer__third-column-social {
+            padding-top: 48px;
+            max-width: 366px;
+        }
 
+        .footer__third-column-social-item a {
+            font-size: 18px;
+        }    
 
-    /*          FOOTER           */ 
-    .footer {
-        padding: 80px 0 20px 0;
-    }
-    .footer__site-logo {
-        max-width: 95px;
-        max-height: 74px;
-    }
+        .footer__donation-subtitle {
+            font-size: 22px;
+        }
 
-    .footer__content {
-        /* column-gap: 75px;
-        grid-template-columns: 2fr 3fr 3fr; */
-        grid-template-columns: 1fr 1fr 0.86fr;
-    }
+        .footer__copyright {
+            margin-top: 61px;
+            padding: 20px 0 0px 0;
+        }
 
-    .footer__logos {
-        grid-column: 1/5;
-        margin-bottom: -50px;        
-        max-width: 474px;
-        height: 185px;
-        flex-direction:unset;
+        .copyright {
+            font-size: 14px;
+        }
+        /*         /FOOTER           */
     }
-
-    .footer__rs-logos {
-        /* display: flex; */
-        max-width: 264px;
-        /* width: 100%; */
-        height: 49px;
-        /* padding-top: 25px; */
-        flex-direction: unset;
-        margin-top: 25px;      
-    }
-
-    .footer__logo-yem {
-        max-width: 93px;
-        height: 49px;
-    }   
-
-    .footer__logo-RS {
-        max-width: 102px;
-        padding-top: 7px;
-    }
-
-    .footer__navigation {
-        max-height: 364px;
-    }
-
-    .footer__navigation-subtitle {
-        font-size: 22px;
-    }
-
-    .footer-navigation__item a {
-        font-size: 16px;
-    }
-
-    .footer__third-column {
-        max-height: 301px;
-        grid-column: 2/5;
-    }
+    /*          /FOOTER          */ 
     
-    .footer__donation-discr {
-        padding-top: 2px;
+}   /*Screen maket 640 // FOOTER and start on 640*/
+@media (max-width: 635px) {
+    .hero__dicription-zoo {
+        max-width: 100%;
     }
-
-    .footer__donation-btn  {
-        padding: 0;
-        max-width: 318px;
-        height: 59px;
-    }
-
-    .footer__third-column-social {
-        padding-top: 48px;
-        max-width: 366px;
-    }
-
-    .footer__third-column-social-item a {
-        font-size: 18px;
-    }    
-
-    .footer__donation-subtitle {
-        font-size: 22px;
-    }
-
-    .footer__copyright {
-        margin-top: 61px;
-        padding: 20px 0 0px 0;
-    }
-
-    .copyright {
+    .hero__name-zoo {
         font-size: 14px;
     }
-    /*         /FOOTER           */
-}   /*ОСНОВА*/
-@media (max-width: 600px) {
-    .second-screen__frame-item {
-        max-width: 120px;
-    }
-    .hero__video {
-        max-width: 300px;
-    }
-    .second-screen__content {
-        max-width: 150px;
-    }
-}
-@media (max-width: 512px) {
-    .oops__title {
-        left: 77px;
-    }
-    .oops__404 {
-        left: 160px;
-    }
     
-}
-@media (max-width: 460px) {
-    .second-screen__frame-item {
-        max-width: 100px;
-    }
+}/*Размер имя зоопарка*/
+@media (max-width: 535px) {
     .hero__video {
-        max-width: 220px;
+        margin-right: 0;
+        width: 55vw;
     }
-    .second-screen__btn-text {
-        font-size: 15px;
-    }
-    .second-screen__content {
-        height: 270px;
-        max-width: 117px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .footer__third-column-social-item a {
-        font-size: 12px;
-    }
+} /*Размер видео и убрал отступ*/
 
-    .footer__donation-btn {
-        font-size: 12px;
-    }
-
-    .accordeon-item__link {
-        color: #609FFF;
-        font-size: 10px;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 423px) {
-    .oops__title {
-        left: 38px;
-    }
-    .oops__404 {
-        left: 126px;
-    }
-}
-
-@media (max-width: 340px) {
-    .oops__title {
-        left: 0px;
-    }
-    .oops__404 {
-        left: 81px;
-    }
-}
-@media screen and (max-width: 320px) {    
+@media screen and (max-width: 450px) {    
     .container { 
-        width: 320px;   
+        width: 100%;   
         /* padding: 0 10px; */
         padding: 0;
     }
@@ -1969,7 +1972,7 @@ h1 {
 
     .header-mobile {
         padding: 0 10px 0 10px;
-        width: 320px;
+        width: 100%;
         height: 59px;
     }
 
@@ -1988,7 +1991,7 @@ h1 {
     .header-mobile__navigation {
         top: 57px;
         right: 700px;
-        max-width: 320px;
+        max-width: 100%;
         width: 100%;
         height: 395px;        
     }
@@ -2096,30 +2099,38 @@ h1 {
 
 
     /*          SECOND           */ 
+    .first-page {
+        padding: 21px 10px;
+        flex-direction: column;
+        height: 801px;
+    }
+
+    .hero {
+        padding-top: 0px;
+        padding-bottom: 19px;        
+    }
+
+    .hero__content {
+        height: auto;
+    }
+
     .hero__donate {
-        width: 300px;
-        top: 15.1%;
-        height: 282px;
-        /* margin-top: 36px; */
+        display: none;
     }
 
     .hero__donate-title {
-        text-align: left;
-        width: 220px;
-        height: 87px;
         font-size: 20px;
-        line-height: 145%;
-        font-weight: bold;
+        max-width: 202px;
     }
 
     .hero__donate-subtitle {
-        width: 300px;
-        font-size: 14px;
-
+        margin-top: 23px;
     }
     
     .hero__dicription-zoo {
-        top: 2.8%;
+        display: flex;
+        height: 44px;
+        max-width: 240px;
     }
 
     .hero__eye {
@@ -2144,21 +2155,29 @@ h1 {
         padding-left: 5px;
     }
 
-    .hero__video {
-        max-width: 300px;
+   .hero__video {
+        max-width: 100%;
         height: 168px;
-        top: 4.54%;
+        width: 100%;
+        margin-top: 19px;
     }
 
-    .second-screen {
-        position: absolute;
-        top: 8.9%;
-        left: 2.8%;
-        width: 300px
+    .hero-mobile__donate {
+        display: block;
+        margin-top: 18px;
+        height: auto;
     }
+
+    .hero__donate-button {
+	    margin-top: 31px;
+    }    
 
     .second-screen__content {
-        height: 218px;
+        height: auto;
+        max-width: 181px;
+        overflow: hidden;
+        margin-top: 0;
+        row-gap: 31px;
     }
 
     .second-screen__button {
@@ -2166,13 +2185,13 @@ h1 {
     }
 
     .second-screen__inner {
-        min-width: 300px;
+        max-width: 100%;
         height: 218px;
         margin-top: 0px;
     }
 
     .second-screen__content {
-        min-width: 300px;
+        max-width: 100%;
     }
 
     .second-screen__sliders-btns {
@@ -2205,237 +2224,250 @@ h1 {
     }
     /*         /SECOND           */ 
 
-    
-    /*          THIRD           */ 
-    .third-screen {
-        top: 428px;
-        padding-bottom: 0;
-    }
-    .third-screen__content {
-        max-width:300px;
-    }
+    @media (max-width: 320px) {
+        .footer__container {
+            max-width: 100%;
+            padding: 0px;
+        }
+            
+        /*          THIRD           */ 
+        .third-screen {
+            top: 428px;
+            padding-bottom: 0;
+        }
+        .third-screen__content {
+            max-width:300px;
+        }
 
-    .third-screen__inner {
-        padding-left: 10px;
-    }
+        .third-screen__inner {
+            padding-left: 10px;
+        }
 
-    .third-screen__subtitle {
-        max-width:300px;
-    }
+        .third-screen__subtitle {
+            max-width:300px;
+        }
 
-    .third-screen__accordeon {
-        max-width: 300px;
-        /* height: 1680px; */
-    }
+        .third-screen__accordeon {
+            max-width: 300px;
+            /* height: 1680px; */
+        }
 
-    .accordeon-item__text {
-        max-width: 300px;
-    }
+        .accordeon-item__text {
+            max-width: 300px;
+        }
 
-    .accordeon-item__title {
-        font-size: 18px;
+        .accordeon-item__title {
+            font-size: 18px;
 
-    }
-    /*         /THIRD           */ 
-
-
-    /*          FOURTH           */
-    .fourth-screen {
-        padding-top: 516px;
-        padding-bottom: 120px;
-    } 
-
-    .fourth-screen__subtitle {        
-        margin-top:0px;
-    }
-
-    .fourth-screen-item {
-        margin: 0 auto;
-        width: 300px;
-        margin-top: 30px;
-    }
-
-    .fourth-screen__item-3 {
-        margin-top: -39px;
-    }
-
-    .fourth-screen-item__text {
-        max-width: 300px;
-    }
-
-    .fourth-screen-item__discr {
-        max-width: 300px;
-        margin-top: 21px;
-        text-align: center;
-    }
-
-    .fourth-screen__item-1 .fourth-screen-item__discr {
-        width: 277px;
-        margin-left: 11px;
-    }
-
-    .fourth-screen-item_second-text .fourth-screen-item__discr {
-        width: 287px;
-        margin-left: 5px;
-    }
-
-    .fourth-screen__item-3 .fourth-screen-item__discr {
-        margin-top: 23px;
-        width: 300px;
-        font-size: 14px;
-        line-height: 154%;
-    }
-
-    .fourth-screen__item-3 .title{
-        margin-top: -14px;
-    }
-    /*         /FOURTH           */ 
+        }
+        /*         /THIRD           */ 
 
 
-    /*          FOOTER           */ 
-    .footer {
-        padding: 60px 0 20px 0;
-    }
+        /*          FOURTH           */
+        .fourth-screen {
+            padding-top: 92px;
+            padding-bottom: 120px;
+        } 
 
-    .footer__container {
-        padding: 0 10px;
+        .fourth-screen__subtitle {        
+            margin-top:0px;
+        }
+
+        .fourth-screen-item {
+            margin: 0 auto;
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        .fourth-screen__item-3 {
+            margin-top: -39px;
+        }
+
+        .fourth-screen-item__text {
+            max-width: 300px;
+        }
+
+        .fourth-screen-item__discr {
+            max-width: 300px;
+            margin-top: 21px;
+            text-align: center;
+        }
+
+        .fourth-screen__item-1 .fourth-screen-item__discr {
+            width: 277px;
+            margin-left: 11px;
+        }
+
+        .fourth-screen-item_second-text .fourth-screen-item__discr {
+            width: 287px;
+            margin-left: 5px;
+        }
+
+        .fourth-screen__item-3 .fourth-screen-item__discr {
+            margin-top: 23px;
+            width: 300px;
+            font-size: 14px;
+            line-height: 154%;
+        }
+
+        .fourth-screen__item-3 .title{
+            margin-top: -14px;
+        }
+        /*         /FOURTH           */ 
     }
 
-    .footer__content {
-        column-gap: 160px;
-        grid-template-columns: none;
+    @media (max-width: 400px) {
+        
+        /*          FOOTER           */ 
+        .footer__container {
+            max-width: 300px;
+            padding: 0 10px;
+        }
+
+        .footer {
+            padding: 60px 0 20px 0;
+        }
+
+        .footer__content {
+            column-gap: 160px;
+            grid-template-columns: none;
+        }
+
+        .footer__logos {
+            flex-direction: column;
+            max-width: 84px;
+            height: 277px;
+            grid-row: 1;
+            grid-column: 1/3;
+        }
+
+        .footer__navigation {
+            max-height: 283px;
+            max-width: 109px;
+            margin-bottom: 0;
+            grid-row: 1;
+            grid-column: 2/3;
+        }
+
+        .footer__third-column {
+            max-width: 297px;
+            grid-column: 1/5;
+            text-align: center;
+            margin-top: 62px;
+        }
+
+        .footer__site-logo {
+            width: 60px;
+            height: 47px;
+        }
+
+        .footer__rs-logos {
+            width: 84px;
+            height: 132px;
+            display: flex;
+            flex-direction: column;
+            flex-flow: wrap-reverse;
+            justify-content: space-between;
+            text-align: center;
+            /* left: 3%; */
+            top: -4%;
+        }
+        
+        .footer__logo-yem {
+            width: 80px;
+            height: 42px;
+            padding-top: 11px;
+            position: unset;
+        }
+
+        .footer_x {
+            padding-top: 23px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            top: 0;
+            font-size: 16px;
+            position: unset;
+        }
+
+        .footer__logo-RS {
+            width: 84px;
+            height: 31px;
+            position: unset;
+        }
+
+        
+
+        .footer__navigation-subtitle {
+            font-size: 18px;
+            line-height: 21px; 
+            padding-bottom: 11px;
+        }
+
+        .footer-navigation__item a {
+            font-size: 14px;
+        }
+
+        
+
+        .footer__third-column-donation {
+            max-width: 300px;
+            height: 202px;
+            margin: 0 auto;
+        }
+
+        .footer__donation-subtitle {
+            font-size: 18px;
+            margin: 0 auto;
+        }
+
+        .footer__donation-discr {
+            max-width: 300px;
+            height: 66px;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .footer__donation-btn {
+            padding: 0;
+            max-width: 300px;
+            height: 57px;
+        }
+
+        .footer__third-column-social {
+            padding-top: 35px;
+            max-width: 300px;
+        }
+
+        .footer__third-column-social-item a {
+            font-size: 14px;
+        }
+
+        .footer__copyright {    
+            margin-top: 31px;
+            padding: 20px 0 0px 0;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+
+        .copyright {
+            font-size: 11px;
+        }
+
+        .footer__copyright-text {
+            padding-top: 10px;
+        }
+        /*         /FOOTER           */
     }
 
-    .footer__logos {
-        flex-direction: column;
-        max-width: 84px;
-        height: 277px;
-        grid-row: 1;
-        grid-column: 1/3;
+    @media (max-width: 320px) {
+        .footer__container {            
+            padding: 0px;
+        }
     }
-
-    .footer__navigation {
-        max-height: 283px;
-        max-width: 109px;
-        margin-bottom: 0;
-        grid-row: 1;
-        grid-column: 2/3;
-    }
-
-    .footer__third-column {
-        max-width: 300px;
-        grid-column: 1/5;
-        text-align: center;
-        margin-top: 62px;
-    }
-
-    .footer__site-logo {
-        width: 60px;
-        height: 47px;
-    }
-
-    .footer__rs-logos {
-        width: 84px;
-        height: 132px;
-        display: flex;
-        flex-direction: column;
-        flex-flow: wrap-reverse;
-        justify-content: space-between;
-        text-align: center;
-        /* left: 3%; */
-        top: -4%;
-    }
-    
-    .footer__logo-yem {
-        width: 80px;
-        height: 42px;
-        padding-top: 11px;
-        position: unset;
-    }
-
-    .footer_x {
-        padding-top: 23px;
-        position: absolute;
-        margin: 0 auto;
-        left: 0;
-        top: 0;
-        font-size: 16px;
-        position: unset;
-    }
-
-    .footer__logo-RS {
-        width: 84px;
-        height: 31px;
-        position: unset;
-    }
-
-    
-
-    .footer__navigation-subtitle {
-        font-size: 18px;
-        line-height: 21px; 
-        padding-bottom: 11px;
-    }
-
-    .footer-navigation__item a {
-        font-size: 14px;
-    }
-
-    
-
-    .footer__third-column-donation {
-        max-width: 300px;
-        height: 202px;
-        margin: 0 auto;
-    }
-
-    .footer__donation-subtitle {
-        font-size: 18px;
-        margin: 0 auto;
-    }
-
-    .footer__donation-discr {
-        max-width: 300px;
-        height: 66px;
-        font-size: 14px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .footer__donation-btn {
-        padding: 0;
-        max-width: 300px;
-        height: 57px;
-    }
-
-    .footer__third-column-social {
-        width: 300px;
-        padding-top: 35px;
-        max-width: 300px;
-    }
-
-    .footer__third-column-social-item a {
-        font-size: 14px;
-    }
-
-    .footer__copyright {    
-        margin-top: 31px;
-        padding: 20px 0 0px 0;
-        display: flex;
-        flex-direction: column;
-        flex-flow: column-reverse;
-    }
-
-    .copyright {
-        font-size: 11px;
-    }
-
-    .footer__copyright-text {
-        padding-top: 10px;
-    }
-    /*         /FOOTER           */
-
-}   /*ОСНОВА*/
+}   /*MAKET 320px/ FOOTER on 400px, THIRD and FOUTH on 320px*/
 
 
 
