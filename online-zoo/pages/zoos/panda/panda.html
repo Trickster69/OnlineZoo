@@ -12,6 +12,7 @@
     <title>Panda</title>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="site-height">
         <!--            ASIDE           -->
         <div class="aside-wrapper">
@@ -120,7 +121,7 @@
                     <div class="hero__inner container">
                         <div class="hero__content">
                             <div class="hero__video">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe id = "hero_main-video" width="100%" height="100%" src="https://www.youtube.com/embed/OObOQ2GElhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             
                             <div class="hero__dicription-zoo">
@@ -152,7 +153,7 @@
                         <div class="second-screen__content">
                             <button class="second-screen__button btn-reset">
                                 <h3 class="second-screen__btn-text title">Other cams</h3>
-                                <div class="second-screen__btn-arrow"><img src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/zoos/second-screen__btn-arrow.svg" alt=""></div>
+                                <div class="second-screen__btn-arrow"><img class="second-screen__btn-arrow-img" src="/trickster69-JSFE2021Q1/online-zoo/assets/icons/zoos/second-screen__btn-arrow.svg" alt=""></div>
                             </button>
                             <div class="second-screen__frames-video">
                                 <div class="second-screen__frame-item">
@@ -172,8 +173,8 @@
                                     </div>
                                 </div>
                                 <div class="second-screen__frame-item">
-                                    <div class="sdfsdf"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/gxSQzooC5nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ySRMDsJoIzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    
                                     
                                     <div class="second-screen__frame-back">
                                         <div class="second-screen__back-frame-text">112 viewers</div>                                        
@@ -211,48 +212,43 @@
                     <div class="third-screen__content">
                         <h3 class="third-screen__title title">Interesting facts</h3>
                         <div class="third-screen__subtitle discription">The yards at the Shenshuping Panda Center in China's Wolong Valley are filled with bamboo, making them very happy. Watch live and learn more about pandas.
-
                         </div>
+
                         <div class="third-screen__accordeon">
                             <div class="accordeon-item">
-                                <div class="accordeon-item__panel">
-                                    <div class="accordeon-item__title">Species population</div>
-                                    <div class="accordeon-item__btn"></div>
-                                </div>
-
-                                <div class="accordeon-item__text discription">A&nbsp;total of&nbsp;60&nbsp;giant panda cubs were born in&nbsp;2019, bringing the total population of&nbsp;these animals in&nbsp;captivity around the world to&nbsp;600. <br>
-                                    And in&nbsp;the wild there are less than 2,000 giant pandas left. They mainly live in&nbsp;Sichuan and Shaanxi provinces.  <br>
-                                    This animal is&nbsp;not only a&nbsp;symbol of&nbsp;the Celestial Empire, but is&nbsp;also under the protection of&nbsp;the Chinese authorities. Harming a&nbsp;panda is&nbsp;punished very severely.
-                                    <br>
-                                    <br>
-                                    <span>Details:  <a class="accordeon-item__link" href="https://regnum.ru/news/society/2776077.html">https://regnum.ru/news/society/2776077.html</a></span>
-                                </div>                                    
-                            </div>
+                                <details class="accordeon-item__panel">
+                                    <summary class="accordeon-item__title">Species population</summary>
+                                    
+                                    <p class="accordeon-item__text discription">A&nbsp;total of&nbsp;60&nbsp;giant panda cubs were born in&nbsp;2019, bringing the total population of&nbsp;these animals in&nbsp;captivity around the world to&nbsp;600. <br>
+                                        And in&nbsp;the wild there are less than 2,000 giant pandas left. They mainly live in&nbsp;Sichuan and Shaanxi provinces.  <br>
+                                        This animal is&nbsp;not only a&nbsp;symbol of&nbsp;the Celestial Empire, but is&nbsp;also under the protection of&nbsp;the Chinese authorities. Harming a&nbsp;panda is&nbsp;punished very severely.
+                                        <br>
+                                        <br>
+                                        <span>Details:  <a class="accordeon-item__link" href="https://regnum.ru/news/society/2776077.html">https://regnum.ru/news/society/2776077.html</a></span></p>
+                                </details>
+                            </div>                            
+                            
 
                             <div class="accordeon-item">
-                                <div class="accordeon-item__panel">
-                                    <div class="accordeon-item__title">Region of habitat</div>
-                                    <div class="accordeon-item__btn"></div>
-                                </div>
-
-                                <div class="accordeon-item__text discription">The habitat of&nbsp;the giant panda includes the mountainous regions of&nbsp;the Tibet-Qinghai Plateau, western central China and southwest China. <br>
-                                    The giant panda lives mainly in&nbsp;the Sichuan province. There are also small populations of&nbsp;this animal in&nbsp;the Shaanxi and Gansu provinces. <br>
-                                    Before extensive land reclamation and deforestation began, the giant panda lived in&nbsp;many low-lying areas of&nbsp;China&rsquo;s interior.                               
-                                </div>                                    
+                                <details class="accordeon-item__panel">
+                                    <summary class="accordeon-item__title">Region of habitat</summary>
+                                    
+                                    <p class="accordeon-item__text discription">The habitat of&nbsp;the giant panda includes the mountainous regions of&nbsp;the Tibet-Qinghai Plateau, western central China and southwest China. <br>
+                                        The giant panda lives mainly in&nbsp;the Sichuan province. There are also small populations of&nbsp;this animal in&nbsp;the Shaanxi and Gansu provinces. <br>
+                                        Before extensive land reclamation and deforestation began, the giant panda lived in&nbsp;many low-lying areas of&nbsp;China&rsquo;s interior.     </p>
+                                </details>                      
                             </div>
                             
                             <div class="accordeon-item">
-                                <div class="accordeon-item__panel">
-                                    <div class="accordeon-item__title">Nutrition</div>
-                                    <div class="accordeon-item__btn"></div>
-                                </div>
-
-                                <div class="accordeon-item__text discription">The giant panda is&nbsp;a&nbsp;unique predator. Her digestion was originally focused on&nbsp;animal feed. But&nbsp;&mdash; millions of&nbsp;years have passed in&nbsp;the process of&nbsp;evolution, digestion has adapted to&nbsp;the digestion of&nbsp;bamboo. The exact reason is&nbsp;unknown. Most likely&nbsp;&mdash; there were few animals around that could be&nbsp;caught. And the plant won&rsquo;t run away.
-                                    Despite the&nbsp;99% bamboo diet, pandas extract only&nbsp;17% of&nbsp;the nutrients from&nbsp;it. This is&nbsp;too little. Therefore, these bears must constantly eat. The rest of&nbsp;the time is&nbsp;sleep and rest to&nbsp;save energy. <br>
-                                    <br>
-                                    The food process is&nbsp;perfected by&nbsp;pandas. Optimal seated position, freeing the front legs&nbsp;&mdash; to&nbsp;take more bamboo. On&nbsp;the paws there are special skin pads and a&nbsp;false thumb&nbsp;&mdash; to&nbsp;hold food more tightly. Strong jaws and complex intestinal microflora&nbsp;&mdash; to&nbsp;better digest bamboo. He&nbsp;has no&nbsp;chance.
-                                    In&nbsp;fairness&nbsp;&mdash; giant pandas, on&nbsp;occasion, can eat fish, honey, eggs, leaves, fruits, roots and even small animals. But bamboo is&nbsp;somehow easier. More familiar.                          
-                                </div>                                    
+                                <details class="accordeon-item__panel">
+                                    <summary class="accordeon-item__title">Nutrition</summary>
+                                    
+                                    <p class="accordeon-item__text discription">The giant panda is&nbsp;a&nbsp;unique predator. Her digestion was originally focused on&nbsp;animal feed. But&nbsp;&mdash; millions of&nbsp;years have passed in&nbsp;the process of&nbsp;evolution, digestion has adapted to&nbsp;the digestion of&nbsp;bamboo. The exact reason is&nbsp;unknown. Most likely&nbsp;&mdash; there were few animals around that could be&nbsp;caught. And the plant won&rsquo;t run away.
+                                        Despite the&nbsp;99% bamboo diet, pandas extract only&nbsp;17% of&nbsp;the nutrients from&nbsp;it. This is&nbsp;too little. Therefore, these bears must constantly eat. The rest of&nbsp;the time is&nbsp;sleep and rest to&nbsp;save energy. <br>
+                                        <br>
+                                        The food process is&nbsp;perfected by&nbsp;pandas. Optimal seated position, freeing the front legs&nbsp;&mdash; to&nbsp;take more bamboo. On&nbsp;the paws there are special skin pads and a&nbsp;false thumb&nbsp;&mdash; to&nbsp;hold food more tightly. Strong jaws and complex intestinal microflora&nbsp;&mdash; to&nbsp;better digest bamboo. He&nbsp;has no&nbsp;chance.
+                                        In&nbsp;fairness&nbsp;&mdash; giant pandas, on&nbsp;occasion, can eat fish, honey, eggs, leaves, fruits, roots and even small animals. But bamboo is&nbsp;somehow easier. More familiar.</p>
+                                </details>                   
                             </div>
                         </div>
                     </div>
@@ -375,6 +371,7 @@
     
     
 <script src="/trickster69-JSFE2021Q1/online-zoo/pages/landing/main.js"></script>
+<script src="/trickster69-JSFE2021Q1/online-zoo/pages/zoos/zoos.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;    
 }
+
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -16,6 +17,25 @@ body {
 h1 {
     position: absolute;
     visibility: hidden;
+}
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 41, 41, 0.6);
+    transition: 0.2s ;
+}
+
+.overlay_mobile {    
+    display: block;
+    z-index: 4;
+}
+
+.body_scroll-block {
+    overflow: hidden;
 }
 
 .header-mobile {
@@ -433,6 +453,9 @@ h1 {
     justify-content: space-between;
     overflow: hidden;
 }
+.second-screen-content_show-hidden {
+    overflow: visible;
+}
 
 .second-screen__button {
     width: 234px;
@@ -448,11 +471,17 @@ h1 {
     height: 13px;
 }
 
-.second-screen__btn-arrow img {
+.second-screen__btn-arrow-img {
     position: absolute;
     top: 28px;
     left: 14px;
     transform: translateY(-50%);
+    transform: rotate(180deg);
+}
+
+.btn_rotate {
+    transform: rotate(0deg);
+    /* transform-origin: top; */
 }
 
 .second-screen__frames-video {
@@ -463,6 +492,7 @@ h1 {
 }
 
 .second-screen__frame-item {
+    cursor: pointer;
     border-radius: 5px;
     overflow: hidden;
     max-width: 328px;
@@ -570,33 +600,59 @@ h1 {
 }
 
 .third-screen__accordeon {
-    margin-top: 12px;
+    margin-top: 26px;
 }
 
-.accordeon-item {    
-    padding-top: 46px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #609FFF;
+.accordeon-item__title::marker {
+    font-size: 0;
+} 
+.accordeon-item__title::after {  
+    content: "+";
+    font-size: 49px;
+    color: #0F0049;
+    transition: transform .5s;
 }
+.accordeon-item__panel[open] > .accordeon-item__title:after {
+    content: "–";
+    color: #609FFF;
+
+}
+
+.accordeon-item__panel[open] > .accordeon-item__title {
+    color: #609FFF;
+}
+
+.accordeon-item__panel[open] .accordeon-item__title ~ *{ 
+    animation: sweep .5s ease-in-out;
+  }
+
+@keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
 
 .accordeon-item__panel {
-    padding-right: 25px;
+    padding-right: 12px;
     display: flex;
     justify-content: space-between;    
+
+    padding-top: 33px;
+    padding-bottom: 25px;    
+    border-bottom: 1px solid #D3D3D3;
 }
 
 .accordeon-item__title {
     font-size: 26px;
     line-height: 145%;
-    color: #609FFF;
+    
+    color: #080029;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .accordeon-item__btn {
-    width: 2px;
-    height: 22px;
-    border: 1px solid #609FFF;
-    background: #609FFF;
-    transform: rotate(90deg);
+    
 }
 
 .accordeon-item__text {
@@ -1046,8 +1102,8 @@ h1 {
         font-size: 22px;
     }
 
-    .second-screen__btn-arrow img {        
-        top: 17px;
+    .second-screen__btn-arrow-img {        
+        top: 12px;
         left: 11px;
         width: 13px;
         height: 9px;
@@ -1106,12 +1162,15 @@ h1 {
     }
     
     .accordeon-item__panel {
-        padding-right: 11px;
+        padding-right: 0px;
     }
 
     .accordeon-item__title {
         font-size: 24px;
+    }
 
+    .accordeon-item__title::after {
+        font-size: 44px;
     }
 
     .accordeon-item__text {
@@ -1530,7 +1589,7 @@ h1 {
         display: block;
         top: 86%;
         position: sticky;
-        z-index: 10;
+        z-index: 3;
         margin: 0 auto;
         border-radius: 15px;
         overflow: hidden;
@@ -1663,6 +1722,10 @@ h1 {
         max-width: 57vw;
     }
 
+    .hero__donate-title {
+        font-size: 22px;
+    }
+
     .hero__donate-button {
         height: 51px;
         padding: 16px 60px;
@@ -1691,6 +1754,12 @@ h1 {
         
     }
 
+    .second-screen-content_show-hidden {
+        overflow: visible;
+    }
+
+    
+
     .second-screen__button {
         max-width: 145px;
     }
@@ -1716,6 +1785,16 @@ h1 {
     .second-screen__sliders-btns {
         display: none;
     }
+
+    .second-screen__back-frame-text {
+        padding-top: 23px;
+        padding-bottom: 5px;
+    }
+
+    .second-screen__back-frame-btn {
+        margin-top: 9.5px;
+        margin-left: 49px;
+    }
     /*         /SECOND           */ 
 
 
@@ -1737,8 +1816,12 @@ h1 {
     }
 
     .third-screen__accordeon {
-        margin-top: 2px;
+        margin-top: 18px;
         max-width: 100%;
+    }
+
+    .accordeon-item__title::after {
+        font-size: 42px;
     }
 
     .accordeon-item__text {
