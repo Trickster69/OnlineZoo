@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
     
@@ -37,6 +38,7 @@ h2,h3,h4 {
     bottom: 0;
     background: rgba(41, 41, 41, 0.6);
     transition: 0.2s ;
+    /* filter: blur(10px); */
 }
 
 .overlay_mobile {    
@@ -355,12 +357,13 @@ input.feedback__input::placeholder{
     text-align: center;
     position: sticky;
     z-index: 2;
+    background: rgba(252, 252, 252, 0.2);
     backdrop-filter: blur(5px);
     
 }
 
 .aside__logo {
-    width: 90px;
+    width: 87px;
     height: 86px;
     padding-top: 23px;
     padding-right: 4px;
@@ -632,7 +635,7 @@ span {
     max-width: 1433px;    
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .third-screen__text {
@@ -671,19 +674,29 @@ span {
     transform: scale(0.98)
 }
 
-.third-screen__images {
-    position: relative;
-    margin-left: 44px;    
-    min-width: 1772px;
-    height: 700px;    
+.third-screen__slider-wrapper {
+    margin-left: 44px;  
     overflow: hidden;
+}
+
+.third-screen__slider-track {
+    position: relative;
+    transition: 0.5s ease-in-out;
+    min-width: 1772px;
+    height: 700px;  
     display: flex;
-    flex-wrap: wrap;
     column-gap: 37px;
     row-gap: 37px;
 }
 
-.third-screen-image-item {
+.third-screen__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 18.8%;
+}
+
+.third-screen__slide-item {
     position: relative;
     transition:1s all;    
 }
@@ -713,7 +726,7 @@ span {
     text-decoration: none;
 }
 
-.third-screen-image-item:before {
+.third-screen__slide-item:before {
     content: "+"; 
     font-weight: 300;
     font-size: 44px;
@@ -739,7 +752,7 @@ span {
     transition: 0.2s ease-out;    
 }
 
-.third-screen-image-item:hover:before {
+.third-screen__slide-item:hover:before {
     content: attr(id);
     font-weight: 400;
     font-size: 18px;
@@ -759,15 +772,15 @@ span {
     border: 2px solid rgba(252, 252, 252, 0.3);
 }
 
- .third-screen-image-item:hover .third-screen-image-item__name {
+ .third-screen__slide-item:hover .third-screen-image-item__name {
     display: none;
 }
 
-.third-screen-image-item:hover .third-screen-image-item__button {
+.third-screen__slide-item:hover .third-screen-image-item__button {
     display: block;
 }
 
-.third-screen-image-item img {
+.third-screen__slide-item img {
     border-radius: 5px;
 }
 /*          /THIRD          */
@@ -924,10 +937,20 @@ span {
     padding-left: 5px;
 }
 
-.fifth-screen__slider {
+.fifth-screen__sliders-wrapper {
+    overflow: hidden;
+}
+
+.fifth-screen__slider-container {
     margin-top: 25px;
     max-width: 1064px;
+    overflow: hidden;
+}
+
+.fifth-screen__slider-track {
+    column-gap: 40px;
     display: flex;
+    transition: 0.2s ease-in-out;
 }
 
 .slider-button_white {
@@ -951,10 +974,11 @@ span {
     border-radius: 15px;
     max-width: 512px;
     height: 273px;
+    flex: 0 0 48.8%;
 }
 
 .fifth-screen__card2 {
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .review-card__name-block {
@@ -1035,6 +1059,10 @@ span {
     overflow: hidden;  
     display: none;  
     padding-bottom: 30px;
+}
+
+.hide_map-card {
+    opacity: 0;
 }
 
 
@@ -1355,9 +1383,8 @@ span {
 
     }
 
-    input::placeholder {
-        font-size: 1px;
-        color: red;
+    input.feedback__input::placeholder{
+        font-size: 16px;
     }
     
 
@@ -1553,7 +1580,7 @@ span {
 
     /*          THIRD          */   
     .third-screen {        
-        padding: 94px 0 86px 0;
+        padding: 94px 0 94px 0;
     }
     .third-screen__content {
         max-height: 554px;
@@ -1565,24 +1592,27 @@ span {
         margin-top: 125px;
         width: 287px;
     }
+    .third-screen__slider-wrapper {        
+        margin-left: 0;
+    }
     
-    .third-screen__images {
+    .third-screen__slider-track {
         margin-left: 0px;
         min-width: 1409px;
-        height: 560px;
-        overflow: hidden;
+        height: 545px;
+        /* overflow: hidden; */
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 30px;
+        /* flex-wrap: wrap; */
+        column-gap: 23px;
         row-gap: 15px;
     }
 
-    .third-screen-image-item {
+    .third-screen__slide-item {
         width: 258px;
         height: 258px;        
     }
 
-    .third-screen-image-item:before {
+    .third-screen__slide-item:before {
         font-weight: 300;
         font-size: 44px;
         width: 59px;
@@ -1591,13 +1621,13 @@ span {
         left: 39%; */
     }
 
-    .third-screen-image-item:hover:before {
+    .third-screen__slide-item:hover:before {
         width: 184px;
         height: 184px;
         font-size: 16px;
         padding: 30px 20px 0;
     }
-    .third-screen-image-item:after {
+    .third-screen__slide-item:after {
         font-size: 18px;
         line-height: 21px;
         top: 223px;
@@ -1741,7 +1771,7 @@ span {
         font-size: 18px;        
     }   
 
-    .fifth-screen__slider {        
+    .fifth-screen__slider-track {        
         max-width: 957px;
     }
     .fifth-screen__card2 {
@@ -1752,6 +1782,7 @@ span {
         padding: 30px 40px 73px 30px; 
         max-width: 454px;
         height: 235px;
+        flex: 0 0 83.8%;
     }
 
     .review-card__name {
@@ -2401,26 +2432,27 @@ span {
         margin: 0 auto;
         margin-top: 60px;
     }
-    .third-screen__images {
+    .third-screen__slider-track {
         min-width: 1019px;
         max-height: 390px;
         height: 390px;
         row-gap: 30px;
+        column-gap: 19px;
     }
 
-    .third-screen-image-item {
+    .third-screen__slide-item {
         width: 180px;
         height: 180px;
     }
 
-    .third-screen-image-item:before { 
+    .third-screen__slide-item:before { 
         width: 41px;
         height: 41px;
         font-size: 24px;
         line-height: 145%;
     }
 
-    .third-screen-image-item:hover:before {
+    .third-screen__slide-item:hover:before {
         width: 129.05px;
         height: 129.05px; 
         font-size: 14px;
@@ -2540,11 +2572,17 @@ span {
         line-height: 21px;
     }
 
-    .fifth-screen__slider {
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
+    .fifth-screen__slider-track {
+        margin-top: 5px;
+        margin-left: 72px;
+        /* display: flex;
+        justify-content: center; */
         text-align: left;
+        max-width: 546px;
+    }
+
+    .fifth-screen__slider-container {
+        max-width: 615px;
     }
 
     .review-card {
@@ -2817,10 +2855,14 @@ span {
 
     .feedback__review {
         margin-top: 25px;
-    }
+    }    
 
     .feedback__name-input {
         font-size: 12px;
+    }
+    
+    input.feedback__input::placeholder{
+        font-size: 14px;
     }
 
     .feedback__send-button {
@@ -3071,18 +3113,18 @@ span {
         padding: 0;
     }
 
-    .third-screen-image-item {
+    .third-screen__slide-item {
         width: 140px;
         height: 140px;
     }
 
-    .third-screen-image-item:before {
+    .third-screen__slide-item:before {
         width: 31px;
         height: 31px;
         font-size: 18px;
     }
 
-    .third-screen-image-item:hover:before {
+    .third-screen__slide-item:hover:before {
         width: 100px;
         height: 100px;
         font-size: 12px;
@@ -3100,14 +3142,14 @@ span {
         line-height: 17px;
     }
 
-    .third-screen-image-item:after {
+    .third-screen__slide-item:after {
         font-size: 14px;
         line-height: 17px;
         top: 118px;
         width: 127px;
     }
 
-    .third-screen__images {
+    .third-screen__slider-track {
         padding-left: 10px;
         margin: 0 auto;
         column-gap: 20px;
@@ -3211,7 +3253,12 @@ span {
         width: 11px;
     }
 
-    .fifth-screen__slider {
+    .fifth-screen__slider-container {
+        margin-top: 0;
+        max-width: 300px;
+    }
+
+    .fifth-screen__slider-track {
         max-width: 620px;
         height: 304px;
         margin-left: 0;
@@ -3219,7 +3266,7 @@ span {
     }
 
     .review-card {        
-        width: 300px;
+        max-width: 300px;
         height: 300px;
     }
 
