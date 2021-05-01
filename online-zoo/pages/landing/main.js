@@ -1,3 +1,4 @@
+//**************       BURGER       *******************//
 const burger = document.querySelector('.burger'),
     mobileNav = document.querySelector('.header-mobile__navigation'),
     mobileHeader = document.querySelector('.header-mobile'),
@@ -32,9 +33,103 @@ const burger = document.querySelector('.burger'),
         }
        
     });
+    
+
+    //**************       MAP       *******************//
+    const markers = document.querySelectorAll('.map-animal-icons__marker'),
+    map = document.querySelector('.sixth-screen__map'),
+    mapMapPage = document.querySelector('.hero__content'),
+    mapCards = document.querySelectorAll('.map-card'),
+    mobileAsideMap = document.querySelectorAll('.aside__animal-item');
+
+    function showMapCard(id){
+        mapCards.forEach(mapCard => {
+            if(mapCard.classList.contains(id)){
+                mapCards.forEach(Card => {
+                    Card.classList.remove('show_map-card');
+                    // Card.classList.remove('hide_map-card');
+                });
+                mapCard.classList.add('show_map-card');
+            }
+        });
+    }
+
+    mobileAsideMap.forEach(mobileAsideElement => {
+        mobileAsideElement.addEventListener('click', (e)=> {
+            mobileAsideMap.forEach(elem => {
+                elem.classList.remove('acide_active'); 
+                elem.classList.add('acide_disable');
+            }); 
+
+            if(mobileAsideElement.id == e.target.id){
+                mobileAsideElement.classList.remove('acide_disable');
+                mobileAsideElement.classList.add('acide_active');
+            }
+            
+            showMapCard(e.target.id);
+        });
+    });
+    mapMapPage.addEventListener('click', (e) => {
+        if (e.target.classList.contains('map-animal-icon__border') || 
+        e.target.classList.contains('map-animal-icons__item') || 
+        e.target.classList.contains('map-animal-icons_piece')) {
+            
+            markers.forEach(marker => {
+                marker.classList.remove('marker_active');
+                let id = e.target.id;
+
+                if(marker.classList.contains(id)) {
+                    marker.classList.add('marker_active');
+                }
+                showMapCard(id);
+            });
+
+        } else {
+            // markers.forEach(marker => {
+            //     marker.classList.remove('marker_active');
+                
+            // });  
+            
+            // mapCards.forEach(card => {
+            //     card.classList.add('hide_map-card');
+            // });
+            return;
+        }
+    });
+    
+    map.addEventListener('click', (e) => {
+        if (e.target.classList.contains('map-animal-icon__border') || 
+        e.target.classList.contains('map-animal-icons__item') || 
+        e.target.classList.contains('map-animal-icons_piece')) {
+            
+            markers.forEach(marker => {
+                marker.classList.remove('marker_active');
+                let id = e.target.id;
+
+                if(marker.classList.contains(id)) {
+                    marker.classList.add('marker_active');
+                }
+                showMapCard(id);
+            });
+
+        } else {
+            // markers.forEach(marker => {
+            //     marker.classList.remove('marker_active');
+                
+            // });  
+            
+            // mapCards.forEach(card => {
+            //     card.classList.add('hide_map-card');
+            // });
+            return;
+        }
+    });
+
+
+
 
     
-    //**************        MODAL        *******************//
+//**************       MODAL       *******************//
     const modalFeedback = document.querySelector('.feedback'),
         formFeedback = document.querySelector('#feedback__form'),
         nameInput = document.querySelector('.feedback__name').querySelector('input'),
@@ -108,74 +203,9 @@ const burger = document.querySelector('.burger'),
     });
 
 
-    //**************       MAP       *******************//
-    const markers = document.querySelectorAll('.map-animal-icons__marker'),
-    map = document.querySelector('.sixth-screen__map'),
-    mapCards = document.querySelectorAll('.map-card'),
-    mobileAsideMap = document.querySelectorAll('.aside__animal-item');
-
-    function showMapCard(id){
-        mapCards.forEach(mapCard => {
-            if(mapCard.classList.contains(id)){
-                mapCards.forEach(Card => {
-                    Card.classList.remove('show_map-card');
-                    // Card.classList.remove('hide_map-card');
-                });
-                mapCard.classList.add('show_map-card');
-            }
-        });
-    }
-
-    mobileAsideMap.forEach(mobileAsideElement => {
-        mobileAsideElement.addEventListener('click', (e)=> {
-            mobileAsideMap.forEach(elem => {
-                elem.classList.remove('acide_active'); 
-                elem.classList.add('acide_disable');
-            }); 
-
-            if(mobileAsideElement.id == e.target.id){
-                mobileAsideElement.classList.remove('acide_disable');
-                mobileAsideElement.classList.add('acide_active');
-            }
-            
-            showMapCard(e.target.id);
-        });
-    });
-
     
-    map.addEventListener('click', (e) => {
-        if (e.target.classList.contains('map-animal-icon__border') || 
-        e.target.classList.contains('map-animal-icons__item') || 
-        e.target.classList.contains('map-animal-icons_piece')) {
-            
-            markers.forEach(marker => {
-                marker.classList.remove('marker_active');
-                let id = e.target.id;
-
-                if(marker.classList.contains(id)) {
-                    marker.classList.add('marker_active');
-                }
-                showMapCard(id);
-            });
-
-        } else {
-            // markers.forEach(marker => {
-            //     marker.classList.remove('marker_active');
-                
-            // });  
-            
-            // mapCards.forEach(card => {
-            //     card.classList.add('hide_map-card');
-            // });
-            return;
-        }
-    });
-
-
-
    
-/*          SLIDER           */
-
+//**************       SLIDER       *******************//
 let position = 0;
 const slidesToShow = 3;
 
@@ -228,7 +258,7 @@ BtnTrirdNext.addEventListener('click', () => {
 });
 
 
-/*      TIMER SLIDER        */
+//**************       TIMER SLIDER       *******************//
 let positionTimerSlider = 0;
 const containerTimerSlider = document.querySelector('.fifth-screen__slider-container'),
 trackTimerSlider = document.querySelector('.fifth-screen__slider-track'),
@@ -285,6 +315,3 @@ function pauseSlider (elements, pause = 10000) {
 
 pauseSlider (itemsTimerSlider);
 pauseSlider (sliderBtnsTimerSlider);
-
-
-

@@ -1,7 +1,7 @@
 * {
-	box-sizing: border-box;
-    
+	box-sizing: border-box;    
 }
+
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -9,6 +9,7 @@
 img {
     max-width: 100%;
 }
+
 body {
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -18,16 +19,28 @@ h1 {
     position: absolute;
     visibility: hidden;
 }
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(41, 41, 41, 0.6);
+    transition: 0.2s ;
+}
 
-.page-wrapper {
-    position: relative;
-    margin: 0 auto;
-    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 860px;
-    padding-top: 24px;
+.overlay_mobile {    
+    display: block;
+    z-index: 2;
+}
+
+.body_scroll-block {
+    overflow: hidden;
+}
+
+.header-mobile {
+    display: none;
 }
 
 .list-reset { /*применять для списков ul*/
@@ -42,7 +55,6 @@ h1 {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-
     border-radius: 5px;
     line-height: 21px;
     text-align: center;
@@ -52,32 +64,25 @@ h1 {
     white-space: nowrap;
 }
 
-
-
-main {
-    display: flex;
+.site-height { 
+    position: relative;
 }
-
+.page-wrapper {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #AACED9;
+}
 .container {
-    /* overflow: hidden; */
-	max-width: 1800px;
-    /* margin: 0 auto; */
-	/* margin: 0 auto; */
-    padding-left: 244px;
-    margin: 0 auto;
-    /* padding-left: 154px; */
+	max-width: 1800px;    
+	margin: 0 auto;    
     /* padding-left: 184px; */
+    padding-left: 9.6vw;
 }
-/* .main-content {
-    width: 100%;
-    margin-left: -90px;
-} */
+
 .navigation-link {
     text-decoration: none;
     font-size: 18px;
-    line-height: 154%;
-    /* color: #080029; */
-    /* position: relative; */
+    line-height: 154%;   
 }
 
 .subtitle {
@@ -121,83 +126,70 @@ main {
 
 
 /*          HEADER           */
-.header-mobile {
-    display: none;
-}
-
 .header {
     max-width: 1800px;    
 	margin: 0 auto;
     background-color: #FCFCFC;
-    padding-left: 50px;
+    /* padding-top: 25px;  */
+    position: relative;
+    z-index: 2;
+    top: 25px;
 }
 
-.header__container {   
-    padding-left: 132px; 
+.header__container {
+    max-width: 1800px;
     display: flex;
     justify-content: space-between;    
     border: 2px solid #F0F0F0;
-    background: rgba(252, 252, 252, 0.02);    
-    position: relative;    
+    background: rgba(252, 252, 252, 0.02); 
 }
 
 .logo {
-    display: none;
     visibility: hidden;
     padding: 23px 16.28px 0px 16.35px;
-    border-right: 2px solid #F0F0F0;
+    border-right: 2px solid #F0F0F0;    
 }
 
 .header__navigation {
-    left: 12.7%;
-    margin-left: 0px;
-    /* position: absolute; */  
-    /* width: 100%; */
-    padding-top: 32px;
+    width: 800px;
+    padding-top: 30px;
+    margin-left: 93px;
 }
 
 .header__navigation-wrapper {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    /* display: grid;
-    grid-template-columns: 2fr 1.05fr 1fr 1fr; */
-    /* position: relative; */
-}
-
-.header__navigation-item {
-    margin-right: 130px;
-}
-
-.header__navigation-item :last-child {
-    margin-right: 0;
+    margin-right: auto    
 }
 
 .header__navigation-item {
     color: #080029;
 }
+
 .header_active {
     font-weight: 500;
     color: #080029;
     cursor: default;
 }
+
 .header_disable:hover {
     text-shadow: 0 0 .50px #080029, 0 0 .50px #080029;
     transition: 0.2s all;
 }
 
-
 .header__profile-button {    
-    margin: 16px 85px 16px 0;  
+    /* margin: 16px 85px 16px 0 ;     */
+    margin: 16px 4.5vw 16px 0;
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: #0F0049;
-    /* padding: 17px 90px 11px 0px;   */
+    background: #0F0049;    
     transition: 0.2s all;  
     position: relative;
     cursor: pointer;
 }
+
 .header__profile-button img {    
     position: absolute;
     top: 10px;
@@ -205,22 +197,22 @@ main {
     width: 26px;
     height: 33px;    
 }
+
 .header__profile-button:hover {
-    background: #080029;
-    /* transform: scale(1.05); */
+    background: #080029;   
 }
+
 .header__profile-button:active {
     background: #150068;
     transform: scale(0.95);
 }
-
-
 /*          /HEADER           */
+
 
 /*          ASIDE           */
 .aside-mobile {
     display: none;
-} 
+}
 
 .aside-wrapper {
     width: 1800px; 
@@ -244,7 +236,7 @@ main {
     border: 2px solid #F0F0F0;
     text-align: center;
     position: sticky;
-    z-index: 2;
+    z-index: 3;
     backdrop-filter: blur(5px);    
 }
 
@@ -333,6 +325,22 @@ main {
 
 
 /*          HERO           */
+.main-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero__content {
+    background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map.png);
+    position: relative;
+    width: 1920px;
+    height: 860px;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 100%;
+}
 .map-card {
     position: absolute;
     top: 11.9%;
@@ -347,11 +355,70 @@ main {
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
     overflow: hidden;
+    display: none;
 }
+
+.gorilla {
+    left: 580px;
+    top: 102px;
+}
+
+.panda {
+    left: 1248px;
+    top: 14px;
+}
+
+.alligator {
+    left: 360px;
+    top: 59px;
+}
+
+.eagle {
+    z-index: 1;
+    left: 165px;
+    top: -21px;
+}
+
+.hide_map-card {
+    opacity: 0;
+}
+
+
+.show_map-card {
+    display: flex;
+}
+
+.map-card:hover {
+    box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
 .map-card__image {
+    overflow: hidden;
     width: 344px;
-    height: 218px;  
-    
+    height: 218px; 
+    position: relative;
+    border-radius: 5px;    
+}
+
+.eagle {
+    justify-content: unset
+}
+
+
+.gorilla img {
+    margin-top: -16.75%;
+    position: absolute;
+}
+
+.alligator img {
+    margin-top: 0%;
+    position: absolute;
+    max-width: 122%;
+}
+
+.map-card__btn-arrow img {
+    position: unset;
 }
 
 .map-card__title {     
@@ -364,6 +431,31 @@ main {
     margin: 0 auto;
     
 }
+
+.gorilla .map-card__btn {
+    padding-left: 112px;
+    color: #3888FF;
+    padding: 27px 115px 15px;
+}
+
+.panda .map-card__btn {
+    padding-left: 112px;
+    color: #3888FF;
+    padding: 27px 115px 15px;
+}
+
+.eagle .map-card__btn {
+    margin-top: 33px;
+    padding: 18px 112px;
+    color: #3888FF;
+}
+
+.alligator .map-card__btn {
+    margin-top: 60px;
+    padding: 18px 112px;
+    color: #3888FF;
+}
+
 .map-card__btn {
     padding-left: 112px;
     margin-top: 7px;
@@ -423,10 +515,7 @@ main {
         max-width: 1120px;   
         padding-left: 144px; 
     }
-    .page-wrapper {
-        background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map\ 1200.png);
-        height: 700px;
-    }
+
     .btn-reset {
         /* padding: 16px 60px; */
         font-size: 16px;
@@ -446,31 +535,25 @@ main {
         line-height: 154%;
     }
 
-    .header__container {
-        padding-left: 81px;
-    }
-
+    /*          HEADER         */ 
     .header {
         max-width: 1120px;
-        margin-left: 50px;
+    }
+
+    .header__container {
+        max-width: 1120px;   
+        padding-left: 53px;
     }
 
     .header__navigation {
-        /* left: 142px;        
-        max-width: 680px;         */
-        padding-top: 19px;
-    }
-
-    .header__navigation-item {
-        margin-right: 100px;
-    }
-    
-    .last_item {
-        margin-right: 0;
+        max-width: 680px;        
+        padding-top: 20px;
+        margin-left: 0px;
     }
 
     .header__profile-button {
-        margin: 11px 81px 16px 0;
+        /* margin: 12px 71px 15px 0; */
+        margin: 12px 5.9vw 15px 0;
         width: 42px;
         height: 42px;
     }
@@ -492,7 +575,6 @@ main {
     .aside { 
         width: 70px;
         height: 620px;
-        background-color: #FCFCFC;
     }
 
     .aside__logo {
@@ -538,45 +620,89 @@ main {
 
     
     /*           MAIN          */
+    .hero__content {
+        background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map\ 1200.png);        
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+    }
     .map-animal-icons__item {
         width: 82px;
     }
 
     .sixth-screen__item-1 {
-        top: 61px;
-        left: -11px;
+        top: 7%;
+        left: 18.1%;
     }
 
     .sixth-screen__item-2 {
-        top: 31.7%;
-        left: 17.56%;
+        top: 25.79%;
+        left: 29.75%;
     }
 
     .sixth-screen__item-3 {
-        top: 51.7%;
-        left: 55%;
+        top: 42.6%;
+        left: 53.1%;
     }
 
     .sixth-screen__item-4 {
-        position: absolute;
-        top: 35.45%;
-        left: 91.4%;
+        top: 28.9%;
+        left: 75.9%;
     }
 
-    .map-card {
+    .map-card {        
         width: 292px;
         height: 448px;
-        top: 9.9%;
-        left: 30.2%;
+        top: 7.9%;
+        left: 18.9%;
+    }
+
+    
+    .gorilla {
+        left: 722px;
+        top: 72px;
+    }
+
+    .panda {
+        left: 1154px;
+    }
+
+    .alligator {
+        left: 657px;
+    }
+
+    .eagle {
+        left: 475px;
     }
 
     .map-card__image {
         height: 193px;
     }
 
+    .alligator img {
+        max-width: 127%;
+    }
+
     .map-card__image img {
-        width: 323px;
-        height: 194px;
+        position: absolute;
+        top: -11px;
+        left: -6px;
+    }    
+
+    .eagle .map-card__btn {
+        margin-top: 34px;
+        padding: 11px 94px;
+    }
+
+    .alligator .map-card__btn {
+        padding: 9px 94px 40px;
+    }
+
+    .gorilla .map-card__btn {
+        padding: 21px 94px 40px;
+    }
+
+    .panda .map-card__btn {
+        padding: 21px 94px 40px;
     }
 
     .map-card__btn {
@@ -585,58 +711,44 @@ main {
     }
     /*          /MAIN          */
 }
-
-@media screen and (max-width: 640px) {
-    .container { 
-        max-width: 640px;   
-        padding: 0 20px;
-    }
-    .page-wrapper {
-        background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map640.png);
-        height: 800px;
-        padding-top: 0;
-    }
-    .btn-reset {
-        font-size: 16px;
-    }
-    .subtitle {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .title {
-        font-size: 24px;
-        line-height: 145%;
-    }
-    .logo {
-        display: block;
-        /* margin-left: -30px; */
-    }
-
+@media (max-width: 1000px) {
+    .header__navigation {
+        margin-left: -29px;
+        max-width: 500px;
+    }    
+} /*Header */
+@media screen and (max-width: 800px) { 
     /*          HEADER           */
     .header {
         box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.04);
         padding: 0;
         width: auto;
-        margin-left: 0;
+        top: 0;
+        
     }
-
     .header__container {
         display: none;
+        /* width: 600px; */
     }
 
     .header-mobile {
         padding: 0 20px 0 20px;
-        max-width: 640px;
+        max-width: 100%;
         width: 100%;
         padding-top: 0;
         display: block;
+        /* width: 600px; */
         height: 88px;
         z-index: 5;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
-        position: absolute;
+        position: fixed;
         background: none;
+    }
+
+    .header-mobile_back {
+        background: #FCFCFC;
+        transition: 0.4s;
     }
 
     .header-mobile__navigation-item {
@@ -666,7 +778,6 @@ main {
         height: 38px;
     }
 
-            /* GENERAL STYLES */
     .visually_hidden {
         position: absolute; 
         overflow: hidden; 
@@ -744,8 +855,8 @@ main {
 
     .header-mobile__navigation {
         top: 80px;
-        right: 700px;
-        max-width: 640px;
+        right: 900px;
+        max-width: 100%;
         width: 100%;
         height: 395px;
         position: absolute;
@@ -759,7 +870,8 @@ main {
     }
 
     .header-mobile__navigation-wrapper {
-        width: 127px;
+        max-width: 127px;
+        width: 100%;
         height: 300px;
         display: flex;
         flex-direction: column;
@@ -779,9 +891,9 @@ main {
         height: 76px;
         max-width: 596px;
         display: block;
-        top: 86%;
+        top: 87.2%;
         position: sticky;
-        z-index: 10;
+        z-index: 1;
         margin: 0 auto;
         border-radius: 15px;
         overflow: hidden;
@@ -800,7 +912,11 @@ main {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 3vw;
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .aside-mobile_arrow-btn {
@@ -856,8 +972,30 @@ main {
         display: none;
     }
     /*         /ASIDE           */ 
+    
+} /*На 800 преобразуем хедер*/
+@media screen and (max-width: 640px) {
+    
+    .btn-reset {
+        font-size: 16px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .title {
+        font-size: 24px;
+        line-height: 145%;
+    }
+    .logo {
+        display: block;
+        /* margin-left: -30px; */
+    }
 
     /*          MAIN           */ 
+    .hero__content {
+        background-position: 41.5% 0%;
+    }
     .map-card {
         width: 250px;
         height: 390px;
@@ -884,24 +1022,49 @@ main {
         padding: 20px 70px;
     }
 
+    .eagle .map-card__btn {
+        padding: 11px 70px;
+    }
+
+    .alligator .map-card__btn {
+        padding: 9px 72px 30px;
+    }
+
+    .gorilla .map-card__btn {
+        padding: 21px 72px 30px;
+    }
+
+    .panda .map-card__btn {
+        padding: 21px 72px 30px;
+    }
+
+    .map-card__image img {
+        top: -4px;
+        left: -1px;
+        max-width: 117%;
+    }
+
+    .alligator img {
+        max-width: 121%;
+    }
+
     .sixth-screen__item-1 {
-        display: none;
+        left: 18.1%;
     }
 
     .sixth-screen__item-2 {
-        display: none;
+        left: 29.75%;
     }
 
     .sixth-screen__item-3 {
-        top: 45.7%;
         left: 50%;
     }
 
     .sixth-screen__item-4 {
-        display: none;
+        left: 75.9%;
     }
     /*         /MAIN           */ 
-}
+} /*на 640 карта*/
 
 @media screen and (max-width: 320px) {    
     .container { 
@@ -910,9 +1073,7 @@ main {
         padding: 0;
     }
     .page-wrapper {
-        background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map320.png);
-        height: 480px;
-        padding-top: 0;
+        /* background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map320.png);         */
     }
     .btn-reset {
         padding: 16px 60px;
@@ -941,8 +1102,7 @@ main {
     .header {
         box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.04);
         padding: 0;
-        width: auto;
-        
+        width: auto;        
     }
     .header__container {
         display: none;
@@ -960,7 +1120,7 @@ main {
         line-height: 21px;
     }
     .logo {        
-        padding: 15px 0px 0px 0px;
+        margin-top: -10px;
     }
     .logo img {
         width: 38px;
@@ -1070,6 +1230,29 @@ main {
         height: 240px;
     }
 
+    .aside-mobile {
+        height: 73px;
+        top: 81.2%;
+        max-width: 300px;
+    }
+
+    .aside-mobile_arrow-btn {
+        width: 37px;
+    }
+
+    .aside-mobile__animals {
+        height: 45px;
+        max-width: 234px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .aside_arrow-btn {
         width: 69px;
         height: 25px;
@@ -1079,6 +1262,11 @@ main {
 
 
     /*          MAIN           */ 
+    .hero__content {
+        background-position: 49.6% -1.5%;
+        background-size: 37%;
+    }
+
     .map-card {
         width: 250px;
         height: 228px;
@@ -1086,13 +1274,29 @@ main {
         visibility: hidden;
     }
 
+    .panda img {
+        top: -29px;
+        left: -15px;
+        max-width: 117%;
+    }
+
     .map-card__image {
         display: none;
     }
 
+    .eagle .map-card__btn {
+        margin-top: 22px;
+    }
+
+    .alligator .map-card__btn {
+        margin-top: 24px;
+        padding: 9px 72px 30px;
+        color: #3888FF;
+    }  
+
     .sixth-screen__item-3 {
-        top: 37.7%;
-        left: 57%;
+        top: 20.7%;
+        left: 51%;
     }
 
     .map-animal-icons__item {
@@ -1100,70 +1304,4 @@ main {
     }
     /*         /MAIN           */ 
 
-}
-
-@media screen and (max-width: 970px) {
-    .sixth-screen__item-4 {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width: 1648px) {
-    .fourth-screen__first-arrow {
-        left: 38.7%;
-    }
-
-    .fourth-screen__second-arrow {
-        left: 26.2%;
-    }
-}
-@media screen and (max-width: 1426px) {
-    .fourth-screen__first-arrow {
-        left: 30.7%;
-    }
-
-    .fourth-screen__second-arrow {
-        left: 13.2%;
-    }
-}
-@media (max-width: 998px) {
-    .header__navigation-item {
-        margin-right: 50px;
-    }
-    .last_item {
-        margin-right: 0;
-    }
-    .header__container {
-        padding-left: 100px;
-    }
-}
-@media (max-width: 823px) {
-    .header__navigation-item {
-        margin-right: 40px;
-    }
-    .last_item {
-        margin-right: 0;
-    }
-    .header__container {
-        padding-left: 70px;
-    }
-}
-@media (max-width: 720px) {
-    .header__navigation-item {
-        margin-right: 20px;
-    }
-    .last_item {
-        margin-right: 0;
-    }
-}
-@media screen and (max-width: 400px) {
-    .footer__third-column-social-item a {
-        font-size: 12px;
-    }
-}
-
-.header-mobile_back {
-    background-color: #FCFCFC;
-    transition: 0.3s all;
 }

@@ -28,7 +28,9 @@ h1 {
 h2,h3,h4 {
     margin: 0;
 } 
-
+.site-height { 
+    position: relative;
+}
 .overlay {
     position: fixed;
     display: none;
@@ -1073,13 +1075,13 @@ span {
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
     cursor: pointer;
 }
+
 .map-card__image {
     overflow: hidden;
     width: 344px;
     height: 218px; 
     position: relative;
-    border-radius: 5px;
-    
+    border-radius: 5px;    
 }
 
 .eagle {
@@ -1833,8 +1835,6 @@ span {
         height: 448px;
         padding-bottom: 0;
     }
-
-    
 
     .map-card__title {
         margin: 22px 0 17px 0;
