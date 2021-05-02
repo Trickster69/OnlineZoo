@@ -399,7 +399,7 @@ function goSlide (){
     clearInterval(autoSlideInterval);
     autoSlideInterval = setInterval(moveTimerSlide, 10000);    
 }
-// goSlide();
+goSlide();
 
 //Функция паузы при нажатии на элемент;
 function pauseSlider (elements, pause = 10000) {
