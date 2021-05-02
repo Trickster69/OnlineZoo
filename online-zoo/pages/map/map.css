@@ -358,6 +358,15 @@ h1 {
     display: none;
 }
 
+.hide_map-card {
+    visibility: hidden;
+}
+
+
+.show_map-card {
+    display: flex;
+}
+
 .gorilla {
     left: 580px;
     top: 102px;
@@ -379,14 +388,7 @@ h1 {
     top: -21px;
 }
 
-.hide_map-card {
-    opacity: 0;
-}
 
-
-.show_map-card {
-    display: flex;
-}
 
 .map-card:hover {
     box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
@@ -624,6 +626,7 @@ h1 {
         background: url(/trickster69-JSFE2021Q1/online-zoo/assets/images/map/map\ 1200.png);        
         background-repeat: no-repeat;
         background-position: 50% 0%;
+        transition: 0.4s ease-in-out;
     }
     .map-animal-icons__item {
         width: 82px;
@@ -912,11 +915,7 @@ h1 {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin-top: 15px;
     }
 
     .aside-mobile_arrow-btn {
@@ -1008,9 +1007,10 @@ h1 {
         overflow: hidden;
     }
 
-    .map-card__image img {
-        width: 287px;
-        height: 191px;
+    .gorilla img {
+        top: -13px;
+        left: -49px;
+        max-width: 117%;
     }
 
     .discription {
@@ -1038,14 +1038,39 @@ h1 {
         padding: 21px 72px 30px;
     }
 
-    .map-card__image img {
-        top: -4px;
-        left: -1px;
+    .gorilla img {
+        top: -14px;
+        left: -46px;
         max-width: 117%;
+    }
+
+    .gorilla  {
+        left: 45.3%;
+        top: 16.3%;
+    }
+
+    .panda {
+        top: 17.3%;
+        left: 59.3%;
+    }
+
+    .alligator {
+        top: 13.3%;
+        left: 31.3%;
+    }
+
+    .eagle {
+        top: 4.3%;
+        left: 18.3%;
     }
 
     .alligator img {
         max-width: 121%;
+    }
+
+    .gorilla {
+        top: 14.3%;
+        left: 36.3%;
     }
 
     .sixth-screen__item-1 {
@@ -1053,7 +1078,7 @@ h1 {
     }
 
     .sixth-screen__item-2 {
-        left: 29.75%;
+        left: 26.75%;
     }
 
     .sixth-screen__item-3 {
@@ -1061,7 +1086,7 @@ h1 {
     }
 
     .sixth-screen__item-4 {
-        left: 75.9%;
+        left: 72.9%;
     }
     /*         /MAIN           */ 
 } /*на 640 карта*/
@@ -1271,7 +1296,27 @@ h1 {
         width: 250px;
         height: 228px;
         top: 3.3%;
-        visibility: hidden;
+        /* visibility: hidden; */
+    }
+
+    .gorilla  {
+        left: 45.3%;
+        top: 16.3%;
+    }
+
+    .panda {
+        top: 8.3%;
+        left: 54.3%;
+    }
+
+    .alligator {
+        top: 7.3%;
+        left: 34.3%;
+    }
+
+    .eagle {
+        top: -3.7%;
+        left: 31.3%;
     }
 
     .panda img {
@@ -1292,16 +1337,34 @@ h1 {
         margin-top: 24px;
         padding: 9px 72px 30px;
         color: #3888FF;
-    }  
+    } 
+
+    .sixth-screen__item-1 {
+        left: 31.1%;
+        top: 0%;
+    }
+
+    .sixth-screen__item-2 {
+        top: 10.79%;
+        left: 37.5%;
+    } 
 
     .sixth-screen__item-3 {
         top: 20.7%;
         left: 51%;
     }
 
+    .sixth-screen__item-4 {
+        left: 64.9%;
+        top: 11.9%;
+    }
+
+
     .map-animal-icons__item {
         width: 64px;
     }
+
+    
     /*         /MAIN           */ 
 
 }

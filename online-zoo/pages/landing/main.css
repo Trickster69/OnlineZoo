@@ -1771,7 +1771,11 @@ span {
         margin-top: 58px;
         height: 61px;
         font-size: 18px;        
-    }   
+    }
+    
+    .fifth-screen__slider-container {
+        max-width: 456px ;
+    }
 
     .fifth-screen__slider-track {        
         max-width: 957px;
@@ -1784,7 +1788,7 @@ span {
         padding: 30px 40px 73px 30px; 
         max-width: 454px;
         height: 235px;
-        flex: 0 0 83.8%;
+        flex: 0 0 100%;
     }
 
     .review-card__name {
@@ -2540,6 +2544,8 @@ span {
         margin-top: -5px;
     }
 
+    
+
     .fourth-screen__item-3 .fourth-screen-item__discr {
         height: 84px;
         max-width: 456px;  
@@ -2689,6 +2695,7 @@ span {
         max-width: 600px;
         height: 346px;   
     }
+    
     /*         /SIXTH           */ 
 
 
@@ -2803,6 +2810,7 @@ span {
         margin: 0 auto;
     }
 }/*HERO and SECOND img Block column*/
+
 
 @media screen and (max-width: 320px) {
     .container { 
