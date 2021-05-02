@@ -69,6 +69,18 @@ const burger = document.querySelector('.burger'),
         });
     }
 
+    function asideItemActive(element,e,panel){
+        panel.forEach(elem => {
+            elem.classList.remove('acide_active'); 
+            elem.classList.add('acide_disable');
+        }); 
+
+        if(element.id == e.target.id){
+            element.classList.remove('acide_disable');
+            element.classList.add('acide_active');
+        }
+    }
+
     /*MAP-PAGE*/
     mapMapPage.addEventListener('click', (e) => {
         if (e.target.classList.contains('map-animal-icon__border') || 
@@ -86,7 +98,6 @@ const burger = document.querySelector('.burger'),
             });
 
         } else {
-            // console.log('dfgdfg');
             markers.forEach(marker => {
                 marker.classList.remove('marker_active');
                 
@@ -98,19 +109,11 @@ const burger = document.querySelector('.burger'),
             return;
         }
     });
-
     
     mapMobileAsideItems.forEach(mobileAsideElement => {
         mobileAsideElement.addEventListener('click', (e)=> {
-            mapMobileAsideItems.forEach(elem => {
-                elem.classList.remove('acide_active'); 
-                elem.classList.add('acide_disable');
-            }); 
-
-            if(mobileAsideElement.id == e.target.id){
-                mobileAsideElement.classList.remove('acide_disable');
-                mobileAsideElement.classList.add('acide_active');
-            }
+            
+            asideItemActive(mobileAsideElement,e,mapMobileAsideItems);            
             showMapCard(e.target.id);
 
             if(windowInnerWidth > 300 && windowInnerWidth <= 320){
@@ -138,7 +141,7 @@ const burger = document.querySelector('.burger'),
                 }
                 if(e.target.id == 'alligator_aside') {
                     showCardandMarker('alligator');
-                    mapMapPage.style.transform = 'TranslateX(20%)';
+                    mapMapPage.style.transform = 'TranslateX(14%)';
                 }
                 if(e.target.id == 'eagle_aside') {
                     showCardandMarker('eagle');
@@ -146,7 +149,7 @@ const burger = document.querySelector('.burger'),
                 }
                 if(e.target.id == 'gorilla_aside') {
                     showCardandMarker('gorilla');
-                    mapMapPage.style.transform = 'TranslateX(-1%)';
+                    mapMapPage.style.transform = 'TranslateX(6%)';
                 }
 
             }else if(windowInnerWidth > 420 && windowInnerWidth < 800) {
@@ -187,30 +190,15 @@ const burger = document.querySelector('.burger'),
             }
         });            
     });
-
-
-
         
     
-    /*MAP-PAGE*/
-
+    /*LANDING-PAGE*/
     mobileAsideMap.forEach(mobileAsideElement => {
         mobileAsideElement.addEventListener('click', (e)=> {
-            mobileAsideMap.forEach(elem => {
-                elem.classList.remove('acide_active'); 
-                elem.classList.add('acide_disable');
-            }); 
-
-            if(mobileAsideElement.id == e.target.id){
-                mobileAsideElement.classList.remove('acide_disable');
-                mobileAsideElement.classList.add('acide_active');
-            }
-            
+            asideItemActive(mobileAsideElement,e,mobileAsideMap);
             showMapCard(e.target.id);
         });
     });
-
-    
 
     mapLanding.addEventListener('click', (e) => {
         if (e.target.classList.contains('map-animal-icon__border') || 
