@@ -343,15 +343,28 @@ BtnTrirdPrev.addEventListener('click', () => {
     moveSlide(sliderTrack, position);
 });
 
+function getItem() {
+    let item = arraySlide[Math.floor(Math.random() * 8)]
+    return item.cloneNode(true);
+}
+let s = 0;
 BtnTrirdNext.addEventListener('click', () => {    
     position -= movePosition;
+    console.log(s, arraySlide.length);
 
-    // var dupNode = arraySlide[Math.floor(Math.random() * 8)].cloneNode(true);
-    // sliderTrack.appendChild(dupNode);
-
-    if (position <  -movePosition * (sliderItems.length - slidesToShow)) {
-        position = 0;        
+    // let item = arraySlide[Math.floor(Math.random() * 8)];
+    let item = arraySlide[s];
+    let dupNode = item.cloneNode(true);
+    sliderTrack.appendChild(dupNode);
+    if(s < arraySlide.length-1){
+        s++;
+    }else{
+        s = 0;
     }
+    
+    // if (position <  -movePosition * (sliderItems.length - slidesToShow)) {
+    //     position = 0;        
+    // }
     moveSlide(sliderTrack, position);
 });
 
