@@ -696,11 +696,13 @@ span {
     flex-direction: column;
     justify-content: space-between;
     flex: 0 0 18.8%;
+
+    position: relative;
 }
 
 .third-screen__slide-item {
     position: relative;
-    transition:1s all;    
+    transition:1s all; 
 }
 
 .third-screen-image-item__name {
@@ -784,6 +786,11 @@ span {
 
 .third-screen__slide-item img {
     border-radius: 5px;
+}
+
+.slide_card {
+    width: 328px;
+    max-height: 328px;
 }
 /*          /THIRD          */
 
